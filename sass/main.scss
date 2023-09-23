@@ -7,8 +7,10 @@
 @import "component/mixin";
 main{
     header{
+        background-image: url(/image/cover1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
         @include center;
-        background-color: rgb(99, 55, 4);
         height: 70vh;
         box-shadow: 0px 2px 10px 0px rgb(39, 39, 39);
         h1{
@@ -56,16 +58,61 @@ main{
         }
     }
     .event{
-        background-color: #ffacac;
         margin: 0 40px;
         h2{
             font-size: 35px;
         }
         .group-event{
             margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
             img{
                 border-radius: 10px;
+            }
+            .schedule{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .time-event{
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p{
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+                    .date{
+                        background-color: #E36414;
+                        padding: 20px;
+                        border-radius: 15px;
+                    }
+                    .date1{
+                        background-color: #F77F00;
+                    }
+                    .date2{
+                        background-color: #D62828;
+                    }
+                    .date3{
+                        background-color: #9E0059;
+                    }
+                    .place{
+                        width: 50%;
+                        display: flex;
+                        justify-content: space-around;
+                        border: 2px solid black;
+                        border-radius: 15px;
+                        padding: 20px 0;
+                        button{
+                            background-color: #44355B;
+                            color: $white;
+                            padding: 5px 15px;
+                            border-radius: 30px;
+                        }
+                    }
+                }
             }
         }
     }
 }
+@import "component/footer"
