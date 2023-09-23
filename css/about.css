@@ -55,6 +55,7 @@ nav {
 main h2 {
   font-size: 35px;
   margin-top: 70px;
+<<<<<<< HEAD
   margin-left: 49px;
 }
 main .card {
@@ -104,4 +105,6 @@ main .experience .card-experience img {
   grid-column: 1/2;
   margin-top: 10px;
   border-radius: 120px;
+=======
+>>>>>>> 68ce7dfc8f2eb2685558a64f26ace34cd97e1606
 }/*# sourceMappingURL=about.css.map */
