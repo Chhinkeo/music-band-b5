@@ -23,6 +23,7 @@ main {
 
         .card-about {
             width: 70%;
+            box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
             @include center;
             flex-direction: column;
             margin: auto;
@@ -68,6 +69,7 @@ main {
                 grid-column: 1/2;
                 margin-top: 10px;
                 border-radius: 120px;
+                box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
             }
         }
 

@@ -14,14 +14,13 @@
                     margin: 20px;
                 }
             }
-
             .card-about:nth-child(2) {
                 flex-direction: row-reverse;
             }
         }
 
         .card-experience {
-            gap: 25px;
+            gap: 35px;
 
             p {
                 text-align: left;
@@ -30,30 +29,30 @@
         }
     }
 }
+
 @media (max-width:768px) {
-    main{
-        .card{
+    main {
+        .card {
             display: flex;
             flex-wrap: wrap;
             gap: 25px;
         }
 
-        .experience{
-            h2{
+        .experience {
+            h2 {
                 text-align: center;
             }
-            .card-experience{
+
+            .card-experience {
                 display: flex;
                 flex-wrap: wrap;
-                img,p{
-                  margin: auto;
+
+                img,
+                p {
+                    margin: auto;
                 }
             }
         }
     }
 
 }
-
-
-
-
