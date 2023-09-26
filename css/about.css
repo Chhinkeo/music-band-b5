@@ -67,6 +67,7 @@ main .card {
 }
 main .card .card-about {
   width: 70%;
+  box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,6 +110,7 @@ main .experience .card-experience img {
   grid-column: 1/2;
   margin-top: 10px;
   border-radius: 120px;
+  box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
 }
 
 footer {
@@ -206,7 +208,7 @@ footer .in-footer:nth-child(4) ul li img {
     flex-direction: row-reverse;
   }
   main .card-experience {
-    gap: 25px;
+    gap: 35px;
   }
   main .card-experience p {
     text-align: left;
@@ -225,7 +227,11 @@ footer .in-footer:nth-child(4) ul li img {
     display: flex;
     flex-wrap: wrap;
   }
-  main .experience .card-experience img, main .experience .card-experience p {
+  main .experience .card-experience img {
+    border: 2px solid rgb(220, 143, 0);
+  }
+  main .experience .card-experience img,
+  main .experience .card-experience p {
     margin: auto;
   }
 }/*# sourceMappingURL=about.css.map */
