@@ -179,7 +179,6 @@ footer {
   height: 40vh;
   background-color: #793300;
   margin-top: 70px;
-<<<<<<< HEAD
   color: white;
   display: flex;
 }
@@ -200,9 +199,6 @@ footer .in-footer:nth-child(1) {
   width: 30%;
 }
 footer .in-footer:nth-child(1) .logo-in-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 10px;
 }
 footer .in-footer:nth-child(1) .logo-in-footer img {
@@ -250,6 +246,4 @@ footer .in-footer:nth-child(4) ul li {
 }
 footer .in-footer:nth-child(4) ul li img {
   margin-right: 20px;
-=======
->>>>>>> 6e063e005075bc52c57a665648357da8776daa51
 }/*# sourceMappingURL=main.css.map */
