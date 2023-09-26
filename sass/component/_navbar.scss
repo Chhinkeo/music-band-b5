@@ -16,9 +16,10 @@ nav{
     align-items: center;
     width: 40%;
     img{
-        width: 50px;
+        width: 45px;
         margin: 0 10px;
         background: url(<path-to-image>), cover no-repeat;
+        border-radius: 50px;
     }
     h2{
         color: $white;

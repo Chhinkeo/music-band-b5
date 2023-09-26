@@ -22,9 +22,10 @@ nav {
   width: 40%;
 }
 .logo img {
-  width: 50px;
+  width: 45px;
   margin: 0 10px;
   background: url(<path-to-image>), cover no-repeat;
+  border-radius: 50px;
 }
 .logo h2 {
   color: white;
@@ -53,9 +54,9 @@ nav {
 }
 
 .contact {
-  height: 1000px;
+  height: 110vh;
   color: white;
-  background-image: url(/page/contact/images/playing\ music.png);
+  background-image: url(/image/bg_contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
