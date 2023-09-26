@@ -32,7 +32,6 @@
         }
   
         input {
-            width: 90%;
             height: 10px;
             padding: 20px;
             border: none;
@@ -40,24 +39,29 @@
         }
   
         textarea {
-            width: 90%;
             padding: 20px;
             border: none;
             border-radius: 5px;
         }
-  
-        button {
-            width: 150px;
-            height: 40px;
-            border-radius: 50px;
-            border: none;
-            margin-left: 70%;
+        .send-container{
+            display: flex;
+            justify-content: flex-end;
+            button {
+                width: 150px;
+                height: 40px;
+                border-radius: 50px;
+                border: none;
+            }
+      
+            button:hover {
+                background: #9a031e;
+                color: white;
+                font-weight: bold;
+            }
         }
-  
-        button:hover {
-            background: #9a031e;
-            color: white;
-            font-weight: bold;
         }
-    }
-  }
+        
+}
+@import "component/footer";
+@import "mixin/responsive-contact";
+// @import "component/footer"

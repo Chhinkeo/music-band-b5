@@ -1,6 +1,6 @@
 @import "_variable";
 nav{
-    background-color: rgb(133, 85, 21);
+    background-color: $brown;
     width: 100%;
     height: 8vh;
     display: flex;
@@ -14,7 +14,7 @@ nav{
 .logo{
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 30%;
     img{
         width: 45px;
         margin: 0 10px;
@@ -28,10 +28,12 @@ nav{
 
 .menu{
     width: 600px;
+    display: flex;
+    justify-content: space-evenly;
     ul{
         list-style: none;
         display: flex;
-        justify-content: space-evenly;
+
         li{
             padding: 16px 0;
             a{
@@ -46,6 +48,35 @@ nav{
             }
         }
     }
+    div{
+        display: flex;
+        align-items: center;
+        button{
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 7px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .login{
+            background-color: $brown;
+            color: $white;
+        }
+        .login:hover{
+            background-color: $white;
+            color: $black;
+        }
+        .register:hover{
+            background-color: $brown;
+            color: $white;
+        }
+    }
 }
 
+<<<<<<< HEAD
    
+=======
+@media (max-width: 768px){
+    
+}
+>>>>>>> 555878c8525e779f14f6684bc131fa936e97b2aa
