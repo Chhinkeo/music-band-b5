@@ -22,9 +22,10 @@ nav {
   width: 40%;
 }
 .logo img {
-  width: 50px;
+  width: 45px;
   margin: 0 10px;
   background: url(<path-to-image>), cover no-repeat;
+  border-radius: 50px;
 }
 .logo h2 {
   color: white;
@@ -150,4 +151,4 @@ main .experience .card-experience img {
   main .experience .card-experience img, main .experience .card-experience p {
     margin: auto;
   }
-}/*# sourceMappingURL=about.css.map */
+}

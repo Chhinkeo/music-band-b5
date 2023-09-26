@@ -22,9 +22,10 @@ nav {
   width: 40%;
 }
 .logo img {
-  width: 50px;
+  width: 45px;
   margin: 0 10px;
   background: url(<path-to-image>), cover no-repeat;
+  border-radius: 50px;
 }
 .logo h2 {
   color: white;
@@ -99,4 +100,4 @@ nav {
   background: #9a031e;
   color: white;
   font-weight: bold;
-}/*# sourceMappingURL=contact.css.map */
+}

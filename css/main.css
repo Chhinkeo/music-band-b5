@@ -22,9 +22,10 @@ nav {
   width: 40%;
 }
 .logo img {
-  width: 50px;
+  width: 45px;
   margin: 0 10px;
   background: url(<path-to-image>), cover no-repeat;
+  border-radius: 50px;
 }
 .logo h2 {
   color: white;
@@ -178,4 +179,4 @@ footer {
   height: 40vh;
   background-color: #793300;
   margin-top: 70px;
-}/*# sourceMappingURL=main.css.map */
+}
