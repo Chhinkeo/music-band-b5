@@ -75,17 +75,21 @@ main .card .card-about {
   border: 5px solid rgb(220, 143, 0);
   border-radius: 15px;
 }
-main .card .card-about p {
+main .card .card-about img {
+  border-radius: 75px;
+  gap: 50px;
+}
+main .card .card-about .text {
   text-align: center;
 }
-main .card .card-about img {
-  border-radius: 70px;
+main .card .card-about .text p {
+  text-align: left;
 }
 main .experience {
   width: 100%;
-  background-color: rgba(36, 147, 147, 0.484);
 }
-main .experience .experience, main .experience h2 {
+main .experience .experience,
+main .experience h2 {
   margin-top: 56px;
   margin-bottom: 30px;
 }
@@ -98,10 +102,52 @@ main .experience .card-experience p {
   grid-column: 2/5;
   margin-top: 70px;
   margin-right: 52px;
-  text-align: center;
+  text-align: left;
 }
 main .experience .card-experience img {
   grid-column: 1/2;
   margin-top: 10px;
   border-radius: 120px;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  main .card .card-about {
+    display: flex;
+    flex-direction: row;
+  }
+  main .card .card-about .text {
+    text-align: left;
+    margin: 20px;
+  }
+  main .card .card-about:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  main .card-experience {
+    gap: 25px;
+  }
+  main .card-experience p {
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  main .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  main .experience h2 {
+    text-align: center;
+  }
+  main .experience .card-experience {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .experience .card-experience img, main .experience .card-experience p {
+    margin: auto;
+  }
+}/*# sourceMappingURL=about.css.map */

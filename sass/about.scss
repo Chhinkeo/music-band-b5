@@ -3,65 +3,74 @@
     padding: 0;
     font-family: Verdana, Geneva, sans-serif;
 }
+
 @import "component/navbar";
 @import "component/mixin";
-main{
-    h2{
+
+main {
+    h2 {
         font-size: 35px;
         margin-top: 70px;
         margin-left: 49px;
-   }
-   .card{
-    width: 100%;
-    margin-top: 56px;
-    padding-bottom: 56px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    .card-about{
-        width: 70%;
-        @include center;
-        flex-direction: column;
-        margin: auto;
-        padding: 20px;
-        border: 5px solid rgb(220, 143, 0);
-        border-radius: 15px;
-        p{
-            text-align: center;
-        }
-        img{
-        border-radius: 70px;
-        }
     }
-    
-   }
-   .experience{
-    width: 100%;
-    background-color: rgba(36, 147, 147, 0.484);
-    .experience,h2{
+
+    .card {
+        width: 100%;
         margin-top: 56px;
-        margin-bottom: 30px;
-    }
-    .card-experience{
+        padding-bottom: 56px;
         display: grid;
-        margin-left: 49px;
-        grid-template-columns: repeat(4,1fr);
-        p{
-            grid-column: 2/5;
-            margin-top:70px;
-            margin-right: 52px;
+        grid-template-columns: repeat(3, 1fr);
+
+        .card-about {
+            width: 70%;
+            @include center;
+            flex-direction: column;
+            margin: auto;
+            padding: 20px;
+            border: 5px solid rgb(220, 143, 0);
+            border-radius: 15px;
+            img{
+                border-radius: 75px;
+                gap: 50px;
+            }
+
+            .text {
             text-align: center;
+            p{
+                text-align: left;
+            }  
+            }
         }
-        img{
-            grid-column: 1/2;
-            margin-top: 10px;
-            border-radius:120px;
-        }
+
     }
+    .experience {
+        width: 100%;
 
-   }
+        .experience,
+        h2 {
+            margin-top: 56px;
+            margin-bottom: 30px;
+        }
 
+        .card-experience {
+            display: grid;
+            margin-left: 49px;
+            grid-template-columns: repeat(4, 1fr);
 
+            p {
+                grid-column: 2/5;
+                margin-top: 70px;
+                margin-right: 52px;
+                text-align: left;
+            }
 
+            img {
+                grid-column: 1/2;
+                margin-top: 10px;
+                border-radius: 120px;
+            }
+        }
 
-   
+    }
 }
+@import "mixin/responsive-about";
