@@ -149,6 +149,9 @@ main .experience .card-experience img {
     display: flex;
     flex-wrap: wrap;
   }
+  main .experience .card-experience img {
+    border: 2px solid rgb(220, 143, 0);
+  }
   main .experience .card-experience img,
   main .experience .card-experience p {
     margin: auto;

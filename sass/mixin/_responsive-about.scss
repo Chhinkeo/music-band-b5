@@ -47,6 +47,9 @@
                 display: flex;
                 flex-wrap: wrap;
 
+                img{
+                   border: 2px solid rgb(220, 143, 0);
+                }
                 img,
                 p {
                     margin: auto;
