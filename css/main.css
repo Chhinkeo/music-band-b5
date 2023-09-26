@@ -105,6 +105,15 @@ main .type-music .group-card .card-music img {
   height: 85%;
   border-radius: 10px 10px 0 0;
 }
+main .type-music .group-card .card-music p {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
 main .event {
   margin: 0 40px;
 }
@@ -161,4 +170,4 @@ main .event .group-event .schedule .time-event .place button {
   color: white;
   padding: 5px 15px;
   border-radius: 30px;
-}
+}/*# sourceMappingURL=main.css.map */
