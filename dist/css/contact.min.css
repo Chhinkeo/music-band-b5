@@ -77,55 +77,56 @@ nav {
   color: white;
 }
 
-.contact {
-  padding: 50px;
-  color: white;
+.cantact-ccontainer {
   background-image: url(/image/bg_contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin-top: 48px;
+  margin-top: 4%;
+  padding: 2%;
   display: flex;
   justify-content: flex-end;
 }
-.contact form {
+.cantact-ccontainer form {
   width: 500px;
-  background: rgba(65, 27, 0, 0.5568627451);
-  margin-top: 20px;
-  padding: 50px;
-  border-radius: 18px;
-  display: grid;
-  gap: 20px;
+  background: rgba(255, 166, 0, 0.459);
+  padding: 3%;
+  border-radius: 3%;
 }
-.contact form #send-sms {
+.cantact-ccontainer form .send-sms {
   text-align: center;
 }
-.contact form input {
-  height: 20px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
+.cantact-ccontainer form input {
+  width: 93%;
+  height: 30px;
+  padding: 3%;
 }
-.contact form textarea {
-  padding: 15px;
+.cantact-ccontainer form #username,
+.cantact-ccontainer form #email,
+.cantact-ccontainer form #message,
+.cantact-ccontainer form #send {
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin-top: 5%;
 }
-.contact form .send-container {
+.cantact-ccontainer form textarea {
+  width: 93%;
+  padding: 3%;
+}
+.cantact-ccontainer form .container-send {
   display: flex;
   justify-content: flex-end;
 }
-.contact form .send-container button {
-  width: 25%;
-  height: 40px;
-  background: orange;
-  border-radius: 50px;
-  border: none;
-}
-.contact form .send-container button:hover {
-  background: #9a031e;
+.cantact-ccontainer form .container-send #send {
+  width: 20%;
+  height: 35px;
+  background: teal;
   color: white;
-  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+}
+.cantact-ccontainer form .container-send #send:hover {
+  background: mediumvioletred;
 }
 
 footer {
@@ -226,37 +227,5 @@ footer .in-footer:nth-child(4) ul li img {
   }
   footer .in-footer:nth-child(3) {
     width: 30%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .contact {
-    justify-content: center;
-  }
-}
-@media (max-width: 768px) {
-  .contact {
-    justify-content: center;
-  }
-  .contact form {
-    width: 100%;
-    padding: 20px;
-    margin: 30px 0 0 0;
-    font-size: 10px;
-  }
-  .contact form input {
-    padding: 10px;
-    font-size: 10px;
-  }
-  .contact form textarea {
-    font-size: 10px;
-  }
-  .contact form .send-container {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .contact form .send-container button {
-    width: 50%;
-    height: 35px;
-    font-size: 12px;
   }
 }

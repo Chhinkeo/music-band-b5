@@ -77,56 +77,11 @@ nav {
   color: white;
 }
 
-.contact {
-  padding: 50px;
-  color: white;
 .cantact-ccontainer {
   background-image: url(/image/bg_contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin-top: 48px;
-  display: flex;
-  justify-content: flex-end;
-}
-.contact form {
-  width: 500px;
-  background: rgba(65, 27, 0, 0.5568627451);
-  margin-top: 20px;
-  padding: 50px;
-  border-radius: 18px;
-  display: grid;
-  gap: 20px;
-}
-.contact form #send-sms {
-  text-align: center;
-}
-.contact form input {
-  height: 20px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-.contact form textarea {
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-}
-.contact form .send-container {
-  display: flex;
-  justify-content: flex-end;
-}
-.contact form .send-container button {
-  width: 25%;
-  height: 40px;
-  background: orange;
-  border-radius: 50px;
-  border: none;
-}
-.contact form .send-container button:hover {
-  background: #9a031e;
-  color: white;
-  font-weight: bold;
   margin-top: 4%;
   padding: 2%;
   display: flex;
@@ -274,36 +229,3 @@ footer .in-footer:nth-child(4) ul li img {
     width: 30%;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .contact {
-    justify-content: center;
-  }
-}
-@media (max-width: 768px) {
-  .contact {
-    justify-content: center;
-  }
-  .contact form {
-    width: 100%;
-    padding: 20px;
-    margin: 30px 0 0 0;
-    font-size: 10px;
-  }
-  .contact form input {
-    padding: 10px;
-    font-size: 10px;
-  }
-  .contact form textarea {
-    font-size: 10px;
-  }
-  .contact form .send-container {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .contact form .send-container button {
-    width: 50%;
-    height: 35px;
-    font-size: 12px;
-  }
-}
-}/*# sourceMappingURL=contact.css.map */
