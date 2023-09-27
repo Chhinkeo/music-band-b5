@@ -96,6 +96,9 @@ footer {
                 width: 100%;                
             }
             ul{
+                display: flex;
+                justify-content: center;
+
                 flex-direction: column;
             }
         }

@@ -8,21 +8,22 @@
   @import "component/navbar";
   
   .contact {
-    height: 110vh;
+    padding: 50px;
     color: white;
     background-image: url(/image/bg_contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-top: 50px;
+    // margin-top: 0px;
+    margin-top: 48px;
     display: flex;
     justify-content: flex-end;
   
     form {
         width: 500px;
         background: #411b008e;
+        margin-top: 20px;
         padding: 50px;
-        margin: 50px 50px 0px 0px;
         border-radius: 18px;
         display: grid;
         gap: 20px;
@@ -32,14 +33,14 @@
         }
   
         input {
-            height: 10px;
-            padding: 20px;
+            height: 20px;
+            padding: 10px;
             border: none;
             border-radius: 5px;
         }
   
         textarea {
-            padding: 20px;
+            padding: 15px;
             border: none;
             border-radius: 5px;
         }
@@ -47,8 +48,9 @@
             display: flex;
             justify-content: flex-end;
             button {
-                width: 150px;
+                width: 25%;
                 height: 40px;
+                background: orange;
                 border-radius: 50px;
                 border: none;
             }
