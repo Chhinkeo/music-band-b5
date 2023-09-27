@@ -84,7 +84,11 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+<<<<<<< HEAD
   margin-top: 0px;
+=======
+  margin-top: 48px;
+>>>>>>> 90f5fed8fdf928a5d68d84026cf20cc7bdc58158
   display: flex;
   justify-content: flex-end;
 }
@@ -217,6 +221,11 @@ footer .in-footer:nth-child(4) ul li img {
     width: 100%;
   }
   footer .in-footer ul {
+<<<<<<< HEAD
+=======
+    display: flex;
+    justify-content: center;
+>>>>>>> 90f5fed8fdf928a5d68d84026cf20cc7bdc58158
     flex-direction: column;
   }
   footer .in-footer:nth-child(1) {
@@ -257,4 +266,4 @@ footer .in-footer:nth-child(4) ul li img {
     height: 35px;
     font-size: 12px;
   }
-}/*# sourceMappingURL=contact.css.map */
+}

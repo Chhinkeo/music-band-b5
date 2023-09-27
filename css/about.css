@@ -226,6 +226,11 @@ footer .in-footer:nth-child(4) ul li img {
     width: 100%;
   }
   footer .in-footer ul {
+<<<<<<< HEAD
+=======
+    display: flex;
+    justify-content: center;
+>>>>>>> 90f5fed8fdf928a5d68d84026cf20cc7bdc58158
     flex-direction: column;
   }
   footer .in-footer:nth-child(1) {
@@ -279,4 +284,4 @@ footer .in-footer:nth-child(4) ul li img {
   main .experience .card-experience p {
     margin: auto;
   }
-}/*# sourceMappingURL=about.css.map */
+}

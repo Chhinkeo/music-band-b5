@@ -96,7 +96,12 @@ footer {
                 width: 100%;                
             }
             ul{
+<<<<<<< HEAD
                 // @include center;
+=======
+                display: flex;
+                justify-content: center;
+>>>>>>> 90f5fed8fdf928a5d68d84026cf20cc7bdc58158
                 flex-direction: column;
             }
         }
