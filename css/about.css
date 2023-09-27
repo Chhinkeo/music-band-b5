@@ -77,55 +77,64 @@ nav {
   color: white;
 }
 
-.contact {
-  padding: 50px;
-  color: white;
-  background-image: url(/image/bg_contact.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-top: 48px;
-  display: flex;
-  justify-content: flex-end;
+main h2 {
+  font-size: 35px;
+  margin-top: 70px;
+  margin-left: 49px;
 }
-.contact form {
-  width: 500px;
-  background: rgba(65, 27, 0, 0.5568627451);
-  margin-top: 20px;
-  padding: 50px;
-  border-radius: 18px;
+main .card {
+  width: 100%;
+  margin-top: 56px;
+  padding-bottom: 56px;
   display: grid;
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
-.contact form #send-sms {
+main .card .card-about {
+  width: 70%;
+  box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid rgb(220, 143, 0);
+  border-radius: 15px;
+}
+main .card .card-about img {
+  border-radius: 75px;
+  gap: 50px;
+}
+main .card .card-about .text {
   text-align: center;
 }
-.contact form input {
-  height: 20px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
+main .card .card-about .text p {
+  text-align: left;
 }
-.contact form textarea {
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
+main .experience {
+  width: 100%;
 }
-.contact form .send-container {
-  display: flex;
-  justify-content: flex-end;
+main .experience .experience,
+main .experience h2 {
+  margin-top: 56px;
+  margin-bottom: 30px;
 }
-.contact form .send-container button {
-  width: 25%;
-  height: 40px;
-  background: orange;
-  border-radius: 50px;
-  border: none;
+main .experience .card-experience {
+  display: grid;
+  margin-left: 49px;
+  grid-template-columns: repeat(4, 1fr);
 }
-.contact form .send-container button:hover {
-  background: #9a031e;
-  color: white;
-  font-weight: bold;
+main .experience .card-experience p {
+  grid-column: 2/5;
+  margin-top: 70px;
+  margin-right: 52px;
+  text-align: left;
+}
+main .experience .card-experience img {
+  grid-column: 1/2;
+  margin-top: 10px;
+  border-radius: 120px;
+  box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
 }
 
 footer {
@@ -229,34 +238,47 @@ footer .in-footer:nth-child(4) ul li img {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .contact {
-    justify-content: center;
+  main .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  main .card .card-about {
+    display: flex;
+    flex-direction: row;
+  }
+  main .card .card-about .text {
+    text-align: left;
+    margin: 20px;
+  }
+  main .card .card-about:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  main .card-experience {
+    gap: 35px;
+  }
+  main .card-experience p {
+    text-align: left;
   }
 }
 @media (max-width: 768px) {
-  .contact {
-    justify-content: center;
-  }
-  .contact form {
-    width: 100%;
-    padding: 20px;
-    margin: 30px 0 0 0;
-    font-size: 10px;
-  }
-  .contact form input {
-    padding: 10px;
-    font-size: 10px;
-  }
-  .contact form textarea {
-    font-size: 10px;
-  }
-  .contact form .send-container {
+  main .card {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 25px;
   }
-  .contact form .send-container button {
-    width: 50%;
-    height: 35px;
-    font-size: 12px;
+  main .experience h2 {
+    text-align: center;
+  }
+  main .experience .card-experience {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .experience .card-experience img {
+    border: 2px solid rgb(220, 143, 0);
+  }
+  main .experience .card-experience img,
+  main .experience .card-experience p {
+    margin: auto;
   }
 }

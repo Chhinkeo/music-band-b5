@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
@@ -77,55 +77,132 @@ nav {
   color: white;
 }
 
-.contact {
-  padding: 50px;
-  color: white;
-  background-image: url(/image/bg_contact.jpg);
-  background-repeat: no-repeat;
+main header {
+  background-image: url(/image/355432223_257742393538800_3014726784789890214_n\ \(1\).jpg);
   background-size: cover;
-  position: relative;
-  margin-top: 48px;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  box-shadow: 0px 2px 10px 0px rgb(39, 39, 39);
 }
-.contact form {
-  width: 500px;
-  background: rgba(65, 27, 0, 0.5568627451);
-  margin-top: 20px;
-  padding: 50px;
-  border-radius: 18px;
-  display: grid;
-  gap: 20px;
+main header h1 {
+  background-color: rgba(0, 0, 0, 0.473);
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+  border-radius: 15px;
 }
-.contact form #send-sms {
+main .discription {
+  width: 600px;
+  background-color: #793300;
+  margin: auto;
+  margin-top: -50px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px 0px rgb(39, 39, 39);
+}
+main .discription p {
+  color: white;
   text-align: center;
 }
-.contact form input {
-  height: 20px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
+main .type-music {
+  margin: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid black;
 }
-.contact form textarea {
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
+main .type-music h2 {
+  font-size: 35px;
 }
-.contact form .send-container {
-  display: flex;
-  justify-content: flex-end;
+main .type-music .group-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  margin-top: 20px;
 }
-.contact form .send-container button {
-  width: 25%;
-  height: 40px;
-  background: orange;
-  border-radius: 50px;
-  border: none;
+main .type-music .group-card a {
+  text-decoration: none;
 }
-.contact form .send-container button:hover {
-  background: #9a031e;
+main .type-music .group-card .card-music {
+  width: 90%;
+  height: 70vh;
+  background-color: #793300;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px rgb(39, 39, 39);
+}
+main .type-music .group-card .card-music img {
+  width: 100%;
+  height: 85%;
+  border-radius: 10px 10px 0 0;
+}
+main .type-music .group-card .card-music p {
   color: white;
+  font-size: 30px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+main .event {
+  margin: 0 40px;
+}
+main .event h2 {
+  font-size: 35px;
+}
+main .event .group-event {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .event .group-event img {
+  box-shadow: -15px -15px #793300;
+}
+main .event .group-event .schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+main .event .group-event .schedule .time-event {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .event .group-event .schedule .time-event p {
+  font-size: 25px;
+  font-weight: bold;
+}
+main .event .group-event .schedule .time-event .date {
+  background-color: #E36414;
+  padding: 20px;
+  border-radius: 15px;
+}
+main .event .group-event .schedule .time-event .date1 {
+  background-color: #F77F00;
+}
+main .event .group-event .schedule .time-event .date2 {
+  background-color: #D62828;
+}
+main .event .group-event .schedule .time-event .date3 {
+  background-color: #9E0059;
+}
+main .event .group-event .schedule .time-event .place {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px 0;
+}
+main .event .group-event .schedule .time-event .place button {
+  background-color: #44355B;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 30px;
 }
 
 footer {
@@ -228,35 +305,20 @@ footer .in-footer:nth-child(4) ul li img {
     width: 30%;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .contact {
-    justify-content: center;
+@media (min-width: 720px) and (max-width: 1024px) {
+  main .type-music .group-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-}
-@media (max-width: 768px) {
-  .contact {
-    justify-content: center;
+  main .event .group-event {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
-  .contact form {
-    width: 100%;
-    padding: 20px;
-    margin: 30px 0 0 0;
-    font-size: 10px;
+  main .event .group-event img {
+    width: 98%;
+    margin-bottom: 20px;
   }
-  .contact form input {
-    padding: 10px;
-    font-size: 10px;
-  }
-  .contact form textarea {
-    font-size: 10px;
-  }
-  .contact form .send-container {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .contact form .send-container button {
-    width: 50%;
-    height: 35px;
-    font-size: 12px;
+  main .event .group-event .schedule .time-event {
+    margin-bottom: 10px;
   }
 }
