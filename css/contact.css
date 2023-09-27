@@ -216,10 +216,13 @@ footer .in-footer:nth-child(4) ul li img {
     width: 100%;
   }
   footer .in-footer ul {
-    @in;
+    flex-direction: column;
   }
   footer .in-footer:nth-child(1) {
     width: 100%;
+  }
+  footer .in-footer:nth-child(3) {
+    width: 30%;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {

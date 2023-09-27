@@ -96,7 +96,6 @@ footer {
                 width: 100%;                
             }
             ul{
-                @include center;
                 flex-direction: column;
             }
         }
@@ -107,5 +106,4 @@ footer {
             width: 30%;
         }
        }
-
 }

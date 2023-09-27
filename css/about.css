@@ -226,9 +226,6 @@ footer .in-footer:nth-child(4) ul li img {
     width: 100%;
   }
   footer .in-footer ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
   footer .in-footer:nth-child(1) {
