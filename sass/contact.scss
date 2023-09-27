@@ -2,67 +2,67 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, sans-serif;
-  }
-  
-  @import "component/variable";
-  @import "component/navbar";
-  
-  .contact {
-    padding: 50px;
-    color: white;
+}
+
+@import "component/variable";
+@import "component/navbar";
+
+.cantact-ccontainer {
     background-image: url(/image/bg_contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    // margin-top: 0px;
-    margin-top: 48px;
+    margin-top: 4%;
+    padding: 2%;
     display: flex;
     justify-content: flex-end;
-  
+
     form {
         width: 500px;
-        background: #411b008e;
-        margin-top: 20px;
-        padding: 50px;
-        border-radius: 18px;
-        display: grid;
-        gap: 20px;
-  
-        #send-sms {
+        background: rgba(255, 166, 0, 0.459);
+        padding: 3%;
+        border-radius: 3%;
+
+        .send-sms {
             text-align: center;
         }
-  
+
         input {
-            height: 20px;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
+            width: 93%;
+            height: 30px;
+            padding: 3%;
         }
-  
+        #username,
+        #email,
+        #message,
+        #send {
+            border: none;
+            border-radius: 10px;
+            margin-top: 5%;
+        }
+
         textarea {
-            padding: 15px;
-            border: none;
-            border-radius: 5px;
+            width: 93%;
+            padding: 3%;
         }
-        .send-container{
+
+        .container-send {
             display: flex;
             justify-content: flex-end;
-            button {
-                width: 25%;
-                height: 40px;
-                background: orange;
-                border-radius: 50px;
-                border: none;
-            }
-      
-            button:hover {
-                background: #9a031e;
+            #send {
+                width: 20%;
+                height: 35px;
+                background: teal;
                 color: white;
-                font-weight: bold;
+                border: none;
+                border-radius: 50px;
+            }
+            #send:hover {
+                background: mediumvioletred;
             }
         }
-        }
-        
+    }
 }
+
 @import "component/footer";
 @import "mixin/responsive-contact";

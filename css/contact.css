@@ -80,6 +80,7 @@ nav {
 .contact {
   padding: 50px;
   color: white;
+.cantact-ccontainer {
   background-image: url(/image/bg_contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,6 +127,51 @@ nav {
   background: #9a031e;
   color: white;
   font-weight: bold;
+  margin-top: 4%;
+  padding: 2%;
+  display: flex;
+  justify-content: flex-end;
+}
+.cantact-ccontainer form {
+  width: 500px;
+  background: rgba(255, 166, 0, 0.459);
+  padding: 3%;
+  border-radius: 3%;
+}
+.cantact-ccontainer form .send-sms {
+  text-align: center;
+}
+.cantact-ccontainer form input {
+  width: 93%;
+  height: 30px;
+  padding: 3%;
+}
+.cantact-ccontainer form #username,
+.cantact-ccontainer form #email,
+.cantact-ccontainer form #message,
+.cantact-ccontainer form #send {
+  border: none;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+.cantact-ccontainer form textarea {
+  width: 93%;
+  padding: 3%;
+}
+.cantact-ccontainer form .container-send {
+  display: flex;
+  justify-content: flex-end;
+}
+.cantact-ccontainer form .container-send #send {
+  width: 20%;
+  height: 35px;
+  background: teal;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+.cantact-ccontainer form .container-send #send:hover {
+  background: mediumvioletred;
 }
 
 footer {
@@ -260,3 +306,4 @@ footer .in-footer:nth-child(4) ul li img {
     font-size: 12px;
   }
 }
+}/*# sourceMappingURL=contact.css.map */
