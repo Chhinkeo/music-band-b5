@@ -73,5 +73,22 @@ nav{
     }
 }
 @media (max-width: 768px){
-    
+    .logo{
+        img{
+            width: 30px;
+        }
+        h2{
+            font-size: 15px;
+        }
+    }
+    .menu{
+        ul{
+            li{
+                a{
+                    font-size: 12px;
+                    padding: 16px 10px;
+                }
+            }
+        }
+    }
 }
