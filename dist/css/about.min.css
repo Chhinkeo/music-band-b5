@@ -111,6 +111,12 @@ main .card .card-about .text {
 main .card .card-about .text p {
   text-align: left;
 }
+main .card .card-about:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+  box-shadow: 0px 8px 15px 0px rgb(0, 0, 0);
+  transform: scale(1.05, 1.05);
+}
 main .experience {
   width: 100%;
 }
@@ -122,6 +128,7 @@ main .experience h2 {
 main .experience .card-experience {
   display: grid;
   margin-left: 49px;
+  margin-bottom: 70px;
   grid-template-columns: repeat(4, 1fr);
 }
 main .experience .card-experience p {
@@ -140,7 +147,6 @@ main .experience .card-experience img {
 footer {
   width: 100%;
   background-color: #793300;
-  margin-top: 70px;
   color: white;
   display: flex;
 }

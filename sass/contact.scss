@@ -19,17 +19,18 @@
 
     form {
         width: 500px;
-        background: rgba(255, 166, 0, 0.459);
+        background:#411b0083;
         padding: 3%;
         border-radius: 3%;
 
         .send-sms {
+            color: white;
             text-align: center;
         }
 
         input {
             width: 93%;
-            height: 30px;
+            height: 20px;
             padding: 3%;
         }
         #username,
@@ -37,7 +38,7 @@
         #message,
         #send {
             border: none;
-            border-radius: 10px;
+            border-radius: 7px;
             margin-top: 5%;
         }
 
@@ -49,17 +50,20 @@
         .container-send {
             display: flex;
             justify-content: flex-end;
+            
             #send {
-                width: 20%;
-                height: 35px;
-                background: teal;
+                width: 30%;
+                height: 40px;
+                background: #ff6d00;
                 color: white;
                 border: none;
                 border-radius: 50px;
             }
             #send:hover {
-                background: mediumvioletred;
+                background: #0d1321;
+                border: 1px solid orange;
             }
+            
         }
     }
 }

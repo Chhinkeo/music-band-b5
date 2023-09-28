@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Poppins&display=swap');
 nav {
     background-color: #793300;
     width: 100%;
@@ -99,4 +100,21 @@ header {
     padding: 75px;    
 }
 
+h1 {
+    font-family: 'New Rocker', cursive;
+    font-size: 60px;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: white;
+    outline: none;
+    text-align: center;
+  }
+  
+  h1:hover {
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 1px;
+  }
 
+  

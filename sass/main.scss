@@ -3,9 +3,11 @@
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+
 // body{
 //     background-color: black;
 // }
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Poppins&display=swap');
 @import "component/navbar";
 @import "component/mixin";
 main{
@@ -19,7 +21,8 @@ main{
         h1{
             background-color: rgba(0, 0, 0, 0.473);
             color: $white;
-            font-size: 50px;
+            font-family: 'New Rocker', cursive;
+            font-size: 70px;
             padding: 20px;
             border-radius: 15px;
         }
@@ -73,10 +76,17 @@ main{
                     margin-top: 10px;
                 }
             }
+            .card-music:hover {
+                font-variation-settings: "wght" 582; 
+                letter-spacing: 1px;
+                box-shadow: 0px 8px 15px 0px rgb(0, 0, 0);
+                transform: scale(1.07, 1.07);
+              }
         }
     }
     .event{
         margin: 0 40px;
+        margin-bottom: 70px;
         h2{
             font-size: 35px;
         }
@@ -129,6 +139,10 @@ main{
                             color: $white;
                             padding: 5px 15px;
                             border-radius: 30px;
+                        }
+                        button:hover{
+                            box-shadow: 0px 8px 15px 0px rgb(0, 0, 0);
+                            transform: scale(1.05, 1.05);
                         }
                     }
                 }
