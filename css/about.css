@@ -77,6 +77,18 @@ nav {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .logo img {
+    width: 30px;
+  }
+  .logo h2 {
+    font-size: 15px;
+  }
+  .menu ul li a {
+    font-size: 12px;
+    padding: 16px 10px;
+  }
+}
 header {
   width: 100%;
   height: 70vh;
@@ -140,6 +152,10 @@ main .card .card-about:hover {
 
 .experience {
   width: 100%;
+<<<<<<< HEAD
+=======
+  background-color: rgba(146, 140, 140, 0.202);
+>>>>>>> bab3f491c6ea3071789aeba12b50845b3216f907
 }
 .experience .experience,
 .experience h2 {
@@ -289,4 +305,4 @@ footer .contact-ft .email-container .email {
   main .experience .card-experience p {
     margin: auto;
   }
-}/*# sourceMappingURL=about.css.map */
+}

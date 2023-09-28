@@ -78,6 +78,18 @@ nav {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .logo img {
+    width: 30px;
+  }
+  .logo h2 {
+    font-size: 15px;
+  }
+  .menu ul li a {
+    font-size: 12px;
+    padding: 16px 10px;
+  }
+}
 main header {
   background-image: url(/image/355432223_257742393538800_3014726784789890214_n\ \(1\).jpg);
   background-size: cover;
@@ -297,7 +309,7 @@ footer .contact-ft .email-container .email {
     width: 60%;
   }
 }
-@media (min-width: 720px) and (max-width: 1024px) {
+@media (min-width: 700px) and (max-width: 1024px) {
   main .type-music .group-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -313,4 +325,50 @@ footer .contact-ft .email-container .email {
   main .event .group-event .schedule .time-event {
     margin-bottom: 10px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+@media (max-width: 699px) {
+  main header h1 {
+    font-size: 45px;
+  }
+  main .discription {
+    width: 400px;
+  }
+  main .type-music h2 {
+    font-size: 25px;
+  }
+  main .type-music .group-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .type-music .group-card .card-music {
+    height: 37vh;
+  }
+  main .type-music .group-card .card-music p {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  main .event h2 {
+    font-size: 25px;
+  }
+  main .event .group-event {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main .event .group-event img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main .event .group-event .schedule .time-event {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  main .event .group-event .schedule .time-event p {
+    font-size: 15px;
+  }
+  main .event .group-event .schedule .time-event .date {
+    padding: 10px;
+  }
+  main .event .group-event .schedule .time-event .place {
+    padding: 10px 0;
+  }
+}

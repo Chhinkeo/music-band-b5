@@ -77,6 +77,18 @@ nav {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .logo img {
+    width: 30px;
+  }
+  .logo h2 {
+    font-size: 15px;
+  }
+  .menu ul li a {
+    font-size: 12px;
+    padding: 16px 10px;
+  }
+}
 .cantact-ccontainer {
   background-image: url(/image/bg_contact.jpg);
   background-repeat: no-repeat;
@@ -214,4 +226,4 @@ footer .contact-ft .email-container .email {
   form {
     margin-top: 15%;
   }
-}/*# sourceMappingURL=contact.css.map */
+}
