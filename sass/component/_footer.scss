@@ -1,111 +1,114 @@
+@import "mixin";
 footer {
-    width: 100%;
-    background-color: $brown;
-    color: $white;
+    // background: #1d3557;
+    background: black;
+    color: white;
+    padding: 2%;
     display: flex;
+    gap: 5%;
 
-    .in-footer {
-        width: 23.33%;
-        padding: 20px;
-        ul{
-            list-style: none;
-            li{
-                a{
-                    color: $white;
-                }
-                a:hover{
-                    color: rgb(87, 87, 255);
-                }
-            }
+    .about-ft {
+        width: 500px;
+        border: 1px solid red;
+
+        .logo-name {
+            width: 70%;
+            background: orange;
+            display: flex;
+            @include space-between;
+
+            .logo {}
+
+            .suffer {}
         }
+
+        #suffer-txt {}
     }
 
-    .in-footer:nth-child(1) {
-        width: 30%;
-        .logo-in-footer {
-            margin-bottom: 10px;
+    .lst-music-ft {
+        // width: 20%;
+        border: 1px solid red;
 
-            img {
-                width: 50px;
-                border-radius: 50px;
-                margin-right: 10px;
-            }
-        }
+        .lst-music {}
 
-        p {
-            margin-left: 15px;
-        }
-    }
+        .link-music { 
 
-    .in-footer:nth-child(2) {
-        padding: 30px;
-
-        h3 {
-            margin-bottom: 10px;
-        }
-    }
-    .in-footer:nth-child(3){
-        padding: 30px;
-        h3{
-            margin-bottom: 10px;
-        }
-        ul{
-            li{
-                width: 40%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 5px;
-                img{
-                    border-radius: 80px;
-                }
-                a{
-                    margin-left: 10px;
+            li { 
+                list-style: none;
+        
+                a { 
+                    text-decoration: none;
+                    color: white;
                 }
             }
         }
     }
-    .in-footer:nth-child(4){
-        padding: 30px;
-        h3{
-            margin-bottom: 10px;
+
+    .social-media-ft {
+        // width: 20%;
+        border: 1px solid red;
+
+        .media-txt-ft {
+            color: white;
         }
-        ul{
-            li{
-                display: flex;
-                align-items: center;
-                img{
-                    margin-right: 20px;
-                }
+
+        .icon-media {
+            width: 40px;
+        }
+    }
+
+    .contact-ft {
+        // width: 20%;
+        border: 1px solid red;
+
+        .tell-container {
+            display: flex;
+            color: white;
+            text-decoration: none;
+
+            .icon-cnt {
+                width: 40px;
+            }
+
+            .tell {
+                margin-left: 10px;
+                align-self: center;
+
+            }
+        }
+
+        .email-container {
+            display: flex;
+            margin-top: 7px;
+            color: white;
+            text-decoration: none;
+
+            .icon-cnt {
+                width: 40px;
+            }
+
+            .email {
+                margin-left: 10px;
+                align-self: center;
+
             }
         }
     }
+
 }
-@media (max-width:768px) {
-    footer{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: auto;
-        margin-top: 15px;
-        .in-footer{
-            width: 100%;
-            text-align: center;
-            .logo-in-footer{
-                width: 100%;                
-            }
-            ul{
-                display: flex;
-                justify-content: center;
 
-                flex-direction: column;
+@media (max-width:768px) {
+    footer {
+        display: block;
+        padding: 8%;
+        padding-bottom: 30px;
+
+        .about-ft {
+            width: 100%;
+
+            .logo-name {
+                width: 60%;
             }
         }
-        .in-footer:nth-child(1) {
-            width: 100%;
-        }
-        .in-footer:nth-child(3){
-            width: 30%;
-        }
-       }
+    }
 }
