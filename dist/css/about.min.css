@@ -119,6 +119,7 @@ main .card .card-about:hover {
 }
 main .experience {
   width: 100%;
+  background-color: rgba(146, 140, 140, 0.202);
 }
 main .experience .experience,
 main .experience h2 {
