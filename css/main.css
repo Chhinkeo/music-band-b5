@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -90,7 +91,8 @@ main header {
 main header h1 {
   background-color: rgba(0, 0, 0, 0.473);
   color: white;
-  font-size: 50px;
+  font-family: "New Rocker", cursive;
+  font-size: 70px;
   padding: 20px;
   border-radius: 15px;
 }
@@ -145,6 +147,12 @@ main .type-music .group-card .card-music p {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+}
+main .type-music .group-card .card-music:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+  box-shadow: 0px 8px 15px 0px rgb(0, 0, 0);
+  transform: scale(1.07, 1.07);
 }
 main .event {
   margin: 0 40px;
@@ -203,6 +211,10 @@ main .event .group-event .schedule .time-event .place button {
   color: white;
   padding: 5px 15px;
   border-radius: 30px;
+}
+main .event .group-event .schedule .time-event .place button:hover {
+  box-shadow: 0px 8px 15px 0px rgb(0, 0, 0);
+  transform: scale(1.05, 1.05);
 }
 
 footer {
