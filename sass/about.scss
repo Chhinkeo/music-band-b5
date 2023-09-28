@@ -6,12 +6,28 @@
 
 @import "component/navbar";
 @import "component/mixin";
-
+header{
+    width: 100%;
+    height: 70vh;
+    background-image: url(/image/355432223_257742393538800_3014726784789890214_n\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    p{
+        padding: 15px;
+        width: 15cm;
+    }
+     
+}
 main {
     h2 {
         font-size: 35px;
         margin-top: 70px;
-        margin-left: 49px;
+        text-align: center;
     }
 
     .card {
@@ -29,7 +45,7 @@ main {
             margin: auto;
             padding: 20px;
             border: 5px solid rgb(220, 143, 0);
-            border-radius: 15px;
+            border-radius: 5px;
 
             img {
                 border-radius: 75px;
@@ -38,6 +54,9 @@ main {
 
             .text {
                 text-align: center;
+                h3{
+                    gap: 80px;
+                }
 
                 p {
                     text-align: left;
@@ -48,7 +67,7 @@ main {
         .card-about:hover {
             font-variation-settings: "wght" 582;
             letter-spacing: 1px;
-            box-shadow: 0px 8px 15px 0px rgb(0, 0, 0);
+            box-shadow: 0px 8px 15px 0px rgba(186, 154, 154, 0.161);
             transform: scale(1.05, 1.05);
         }
 
@@ -56,35 +75,28 @@ main {
 
     .experience {
         width: 100%;
-<<<<<<< HEAD
-        background-color: rgba(146, 140, 140, 0.202);
-=======
-
->>>>>>> eec0d1402505e3a11dac3675f24e8ba466810ffc
+        background-color: rgba(203, 184, 184, 0.484);
         .experience,
         h2 {
-            margin-top: 56px;
-            margin-bottom: 30px;
+          padding: 20px;
         }
 
         .card-experience {
             display: grid;
             margin-left: 49px;
-            margin-bottom: 70px;
-            grid-template-columns: repeat(4, 1fr);
+            padding-bottom: 70px;
+            grid-template-columns: repeat(2, 1fr);
 
             p {
-                grid-column: 2/5;
                 margin-top: 70px;
-                margin-right: 52px;
                 text-align: left;
+                padding-right: 60px;
             }
 
             img {
-                grid-column: 1/2;
+                padding-left: 50px;
                 margin-top: 10px;
-                border-radius: 120px;
-                box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
+                width: 60%;
             }
         }
 
