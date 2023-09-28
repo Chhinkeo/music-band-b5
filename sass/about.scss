@@ -66,6 +66,7 @@ main {
         .card-experience {
             display: grid;
             margin-left: 49px;
+            margin-bottom: 70px;
             grid-template-columns: repeat(4, 1fr);
 
             p {

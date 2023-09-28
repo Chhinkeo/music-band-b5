@@ -156,6 +156,7 @@ main .type-music .group-card .card-music:hover {
 }
 main .event {
   margin: 0 40px;
+  margin-bottom: 70px;
 }
 main .event h2 {
   font-size: 35px;
@@ -220,7 +221,6 @@ main .event .group-event .schedule .time-event .place button:hover {
 footer {
   width: 100%;
   background-color: #793300;
-  margin-top: 70px;
   color: white;
   display: flex;
 }
