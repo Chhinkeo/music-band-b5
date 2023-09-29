@@ -128,7 +128,7 @@ main .card .card-about {
   flex-direction: column;
   margin: auto;
   padding: 20px;
-  border: 3px solid rgb(203, 155, 66);
+  border: 2px solid rgb(203, 155, 66);
 }
 main .card .card-about img {
   width: 200px;
@@ -144,18 +144,37 @@ main .card .card-about .text p {
   text-align: left;
 }
 main .card .card-about:hover {
-  font-variation-settings: "wght" 582;
-  letter-spacing: 1px;
+  font-variation-settings: "wght" 20;
   box-shadow: 0px 8px 15px 0px rgba(186, 154, 154, 0.161);
   transform: scale(1.05, 1.05);
+}
+main .new {
+  width: 100%;
+}
+main .new p {
+  width: 15cm;
+  background-color: rgba(76, 107, 107, 0.424);
+}
+main .new .icone {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .new .icone .icone1 {
+  display: grid;
+  justify-content: center;
+  padding: 50px;
+}
+main .new .icone .icone1 img {
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+main .new .icone .icone1 h3 {
+  margin: auto;
 }
 
 .experience {
   width: 100%;
-<<<<<<< HEAD
-=======
-  background-color: rgba(146, 140, 140, 0.202);
->>>>>>> bab3f491c6ea3071789aeba12b50845b3216f907
 }
 .experience .experience,
 .experience h2 {
@@ -176,8 +195,7 @@ main .card .card-about:hover {
   width: 60%;
 }
 .experience .card-experience img:hover {
-  font-variation-settings: "wght" 582;
-  letter-spacing: 1px;
+  font-variation-settings: "wght" 20;
   box-shadow: 0px 8px 15px 0px rgba(4, 2, 2, 0.161);
   transform: scale(1.05, 1.05);
 }
@@ -305,4 +323,4 @@ footer .contact-ft .email-container .email {
   main .experience .card-experience p {
     margin: auto;
   }
-}
+}/*# sourceMappingURL=about.css.map */
