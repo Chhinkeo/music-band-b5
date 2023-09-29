@@ -95,34 +95,34 @@ header .color-overlay {
   position: absolute;
 }
 header h1 {
-  z-index: 11111;
+  z-index: 1111;
 }
 header p {
   padding: 15px;
   width: 15cm;
-  z-index: 11111;
+  z-index: 1111;
 }
 
-main .color-overlay {
+main .ourteam .color-overlay {
   background: linear-gradient(to top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   opacity: 0.8;
   position: absolute;
 }
-main h2 {
+main .ourteam h2 {
   font-size: 35px;
   text-align: center;
   color: rgb(255, 255, 255);
 }
-main .card {
+main .ourteam .card {
   width: 100%;
   margin-top: 56px;
   padding-bottom: 56px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-main .card .card-about {
+main .ourteam .card .card-about {
   background-color: rgba(128, 128, 128, 0.396);
   width: 70%;
   box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
@@ -135,20 +135,20 @@ main .card .card-about {
   border: 2px solid rgb(178, 178, 178);
   transition: 0.4s;
 }
-main .card .card-about img {
+main .ourteam .card .card-about img {
   width: 200px;
 }
-main .card .card-about .text {
+main .ourteam .card .card-about .text {
   text-align: center;
   font-size: 15px;
 }
-main .card .card-about .text h3 {
+main .ourteam .card .card-about .text h3 {
   gap: 80px;
 }
-main .card .card-about .text p {
+main .ourteam .card .card-about .text p {
   text-align: left;
 }
-main .card .card-about:hover {
+main .ourteam .card .card-about:hover {
   font-variation-settings: "wght" 20;
   box-shadow: 0px 8px 15px 0px rgba(186, 154, 154, 0.161);
   transform: scale(1.05, 1.05);
@@ -165,12 +165,14 @@ main .new p {
   margin: auto;
 }
 main .new .icone {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 main .new .icone .icone1 {
-  display: grid;
+  display: flex;
   justify-content: center;
+  flex-direction: column;
   padding: 50px;
 }
 main .new .icone .icone1 img {
@@ -182,30 +184,29 @@ main .new .icone .icone1 h3 {
   padding: 15px;
   margin: auto;
 }
-
-.experience {
+main .experience {
   width: 100%;
 }
-.experience .experience,
-.experience h2 {
+main .experience .experience,
+main .experience h2 {
   padding: 20px;
 }
-.experience .card-experience {
+main .experience .card-experience {
   display: grid;
   margin-left: 49px;
   padding-bottom: 70px;
   grid-template-columns: repeat(2, 1fr);
 }
-.experience .card-experience p {
+main .experience .card-experience p {
   padding: 60px;
   text-align: left;
   padding-right: 90px;
 }
-.experience .card-experience img {
+main .experience .card-experience img {
   transition: 0.4s;
   width: 60%;
 }
-.experience .card-experience img:hover {
+main .experience .card-experience img:hover {
   font-variation-settings: "wght" 20;
   box-shadow: 0px 8px 15px 0px rgba(4, 2, 2, 0.161);
   transform: scale(1.05, 1.05);
@@ -223,19 +224,32 @@ footer {
   color: white;
   padding: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 5%;
+}
+footer li {
+  margin-top: 6px;
+  list-style: none;
+}
+footer p {
+  margin-top: 6px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  border-bottom: 2px solid orange;
 }
 footer .about-company {
   margin-bottom: 20px;
   width: 40%;
 }
 footer .about-company p {
-  margin: 0;
-  padding: 0;
+  margin: 5px;
 }
 footer .center-ft {
-  width: 20%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -243,58 +257,20 @@ footer .center-ft {
 footer .center-ft .list-of-music {
   margin-bottom: 20px;
 }
-footer .center-ft .list-of-music ul {
-  list-style: none;
-  padding: 0;
-}
-footer .center-ft .list-of-music ul li {
-  margin: 0;
-  padding: 0;
-}
 footer .center-ft .follow-us {
   margin-bottom: 20px;
 }
 footer .center-ft .follow-us ul {
-  list-style: none;
-  padding: 0;
+  gap: 10px;
+  display: flex;
 }
-footer .center-ft .follow-us ul li {
-  margin: 0;
-  padding: 0;
+footer .center-ft .follow-us ul .icon-media {
+  width: 30px;
 }
-footer .our-contact {
+footer .center-ft .our-contact {
   margin-bottom: 20px;
 }
-footer .our-contact p {
-  margin: 0;
-  padding: 0;
-  margin-top: 5px;
-}
 
-@media screen and (max-width: 768px) {
-  footer {
-    flex-direction: column;
-  }
-  footer .about-company {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  footer .center-ft {
-    width: 100%;
-  }
-  footer .center-ft .list-of-music {
-    margin-bottom: 20px;
-  }
-  footer .center-ft .follow-us {
-    margin-bottom: 20px;
-  }
-  footer .our-contact {
-    margin-bottom: 20px;
-    margin-top: 5px;
-    text-align: center;
-    border-top: 1px solid gray;
-  }
-}
 @media (min-width: 768px) and (max-width: 1024px) {
   main .card {
     display: flex;
@@ -338,5 +314,29 @@ footer .our-contact p {
   main .experience .card-experience img,
   main .experience .card-experience p {
     margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .about-company {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .center-ft {
+    width: 100%;
+  }
+  footer .center-ft .list-of-music {
+    margin-bottom: 20px;
+  }
+  footer .center-ft .follow-us {
+    margin-bottom: 20px;
+  }
+  footer .our-contact {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    border-top: 1px solid gray;
   }
 }/*# sourceMappingURL=about.css.map */

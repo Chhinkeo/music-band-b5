@@ -28,86 +28,91 @@ header {
     align-items: center;
     flex-direction: column;
     color: white;
-    .color-overlay {
-        background: linear-gradient(to top right, rgb(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-        width: 100%;
-        height: 70vh;
-        opacity: .8;
-        position: absolute;
-    }
-   
+    
+   .color-overlay{
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    width: 100%;
+    height: 70vh;
+    opacity: .8;
+    position: absolute;
+   }
     h1{
-        z-index: 11111;
+        z-index: 1111;
     }
     p {
         padding: 15px;
         width: 15cm;
-        z-index: 11111;
+        z-index: 1111;
     }
 
 
 }
 
 main {
-    .color-overlay {
-        background: linear-gradient(to top right, rgb(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-        width: 100%;
-        height: 70vh;
-        opacity: .8;
-        position: absolute;
-    }
-    h2 {
-        font-size: 35px;
-        text-align: center;
-        color: rgb(255, 255, 255);
+    .ourteam{
+        .color-overlay{
+            background: linear-gradient(to top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+            width: 100%;
+            height: 80vh;
+            opacity: .8;
+            position: absolute;
+           }
+        h2 {
+            font-size: 35px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            
+        }
+    
+        .card {
+            width: 100%;
+            margin-top: 56px;
+            padding-bottom: 56px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+    
+            .card-about {
+                background-color: rgba(128, 128, 128, 0.396);
+                width: 70%;
+                box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
+                @include center;
+                flex-direction: column;
+                margin: auto;
+                padding: 20px;
+                border: 2px solid rgb(178, 178, 178);
+                transition: 0.4s;
+    
+                img {
+                    width: 200px;
+                }
+    
+                .text {
+                    text-align: center;
+                    font-size: 15px;
+    
+                    h3 {
+                        gap: 80px;
+                    }
+    
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
+    
+            .card-about:hover {
+                font-variation-settings: "wght" 20;
+                box-shadow: 0px 8px 15px 0px rgba(186, 154, 154, 0.161);
+                transform: scale(1.05, 1.05);
+                opacity: 9
+            }
+    
+        }
+    
         
+    
+    
     }
-
-    .card {
-        width: 100%;
-        margin-top: 56px;
-        padding-bottom: 56px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-        .card-about {
-            background-color: rgba(128, 128, 128, 0.396);
-            width: 70%;
-            box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
-            @include center;
-            flex-direction: column;
-            margin: auto;
-            padding: 20px;
-            border: 2px solid rgb(178, 178, 178);
-            transition: 0.4s;
-
-            img {
-                width: 200px;
-            }
-
-            .text {
-                text-align: center;
-                font-size: 15px;
-
-                h3 {
-                    gap: 80px;
-                }
-
-                p {
-                    text-align: left;
-                }
-            }
-        }
-
-        .card-about:hover {
-            font-variation-settings: "wght" 20;
-            box-shadow: 0px 8px 15px 0px rgba(186, 154, 154, 0.161);
-            transform: scale(1.05, 1.05);
-            opacity: 9
-        }
-
-    }
-
     .new {
         width: 100%;
         height: 60vh;
@@ -120,12 +125,14 @@ main {
         }
 
         .icone {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
 
             .icone1 {
-                display: grid;
+                display: flex;
                 justify-content: center;
+                flex-direction: column;
                 padding: 50px;
 
                 img {
@@ -144,45 +151,44 @@ main {
         }
 
     }
-
-
-}
-
-.experience {
-    width: 100%;
-
-    .experience,
-    h2 {
-        padding: 20px;
-    }
-
-    .card-experience {
-        display: grid;
-        margin-left: 49px;
-        padding-bottom: 70px;
-        grid-template-columns: repeat(2, 1fr);
-
-        p {
-            padding: 60px;
-            text-align: left;
-            padding-right: 90px;
+    .experience {
+        width: 100%;
+    
+        .experience,
+        h2 {
+            padding: 20px;
         }
-
-        img {
-            transition: 0.4s;
-            width: 60%;
-        }
-
-        img:hover {
-            font-variation-settings: "wght" 20;
-            box-shadow: 0px 8px 15px 0px rgba(4, 2, 2, 0.161);
-            transform: scale(1.05, 1.05);
-            opacity: 9;
+    
+        .card-experience {
+            display: grid;
+            margin-left: 49px;
+            padding-bottom: 70px;
+            grid-template-columns: repeat(2, 1fr);
+    
+            p {
+                padding: 60px;
+                text-align: left;
+                padding-right: 90px;
+            }
+    
+            img {
+                transition: 0.4s;
+                width: 60%;
+            }
+    
+            img:hover {
+                font-variation-settings: "wght" 20;
+                box-shadow: 0px 8px 15px 0px rgba(4, 2, 2, 0.161);
+                transform: scale(1.05, 1.05);
+                opacity: 9;
+            }
         }
     }
+    
 
 }
 
 
 @import "component/footer";
 @import "mixin/responsive-about";
+@import "mixin/responsive-footer";
