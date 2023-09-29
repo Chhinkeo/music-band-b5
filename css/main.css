@@ -232,7 +232,7 @@ footer {
   color: white;
   padding: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 5%;
 }
 footer .about-company {
@@ -244,7 +244,7 @@ footer .about-company p {
   padding: 0;
 }
 footer .center-ft {
-  width: 20%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -280,30 +280,6 @@ footer .our-contact p {
   margin-top: 5px;
 }
 
-@media screen and (max-width: 768px) {
-  footer {
-    flex-direction: column;
-  }
-  footer .about-company {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  footer .center-ft {
-    width: 100%;
-  }
-  footer .center-ft .list-of-music {
-    margin-bottom: 20px;
-  }
-  footer .center-ft .follow-us {
-    margin-bottom: 20px;
-  }
-  footer .our-contact {
-    margin-bottom: 20px;
-    margin-top: 5px;
-    text-align: center;
-    border-top: 1px solid gray;
-  }
-}
 @media (min-width: 700px) and (max-width: 1024px) {
   main .type-music .group-card {
     display: grid;
@@ -365,5 +341,29 @@ footer .our-contact p {
   }
   main .event .group-event .schedule .time-event .place {
     padding: 10px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .about-company {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .center-ft {
+    width: 100%;
+  }
+  footer .center-ft .list-of-music {
+    margin-bottom: 20px;
+  }
+  footer .center-ft .follow-us {
+    margin-bottom: 20px;
+  }
+  footer .our-contact {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    border-top: 1px solid gray;
   }
 }/*# sourceMappingURL=main.css.map */
