@@ -68,9 +68,10 @@ nav {
   }
 }
 body {
-  background-image: url(/image/bgc-about.jpg);
+  background-image: url(/image/change.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu > ul > li:nth-child(2) > a {
@@ -80,24 +81,39 @@ body {
 header {
   width: 100%;
   height: 70vh;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
 }
+header .color-overlay {
+  background: linear-gradient(to top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  width: 100%;
+  height: 70vh;
+  opacity: 0.8;
+  position: absolute;
+}
+header h1 {
+  z-index: 11111;
+}
 header p {
   padding: 15px;
   width: 15cm;
-  background-color: rgba(76, 107, 107, 0.424);
+  z-index: 11111;
 }
 
+main .color-overlay {
+  background: linear-gradient(to top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  width: 100%;
+  height: 70vh;
+  opacity: 0.8;
+  position: absolute;
+}
 main h2 {
   font-size: 35px;
-  margin-top: 70px;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 main .card {
   width: 100%;
@@ -141,7 +157,7 @@ main .card .card-about:hover {
 main .new {
   width: 100%;
   height: 60vh;
-  background-color: rgb(172, 162, 162);
+  background-color: rgb(210, 205, 205);
 }
 main .new p {
   width: 15cm;
@@ -169,7 +185,6 @@ main .new .icone .icone1 h3 {
 
 .experience {
   width: 100%;
-  transition: 0.4s;
 }
 .experience .experience,
 .experience h2 {
@@ -187,6 +202,7 @@ main .new .icone .icone1 h3 {
   padding-right: 90px;
 }
 .experience .card-experience img {
+  transition: 0.4s;
   width: 60%;
 }
 .experience .card-experience img:hover {

@@ -6,39 +6,61 @@
 
 @import "component/navbar";
 @import "component/mixin";
-body{
- background-image: url(/image/bgc-about.jpg);
- background-repeat: no-repeat;
- background-size: cover;
+
+body {
+    background-image: url(/image/change.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    
 }
-.menu>ul>li:nth-child(2)>a{
+
+
+.menu>ul>li:nth-child(2)>a {
     background-color: rgba(0, 0, 0, 0.267);
 }
-header{
+
+header {
     width: 100%;
     height: 70vh;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
-
+    .color-overlay {
+        background: linear-gradient(to top right, rgb(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+        width: 100%;
+        height: 70vh;
+        opacity: .8;
+        position: absolute;
+    }
+   
+    h1{
+        z-index: 11111;
+    }
     p {
         padding: 15px;
         width: 15cm;
-        background-color: rgba(76, 107, 107, 0.424);
+        z-index: 11111;
     }
 
 
 }
 
 main {
+    .color-overlay {
+        background: linear-gradient(to top right, rgb(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+        width: 100%;
+        height: 70vh;
+        opacity: .8;
+        position: absolute;
+    }
     h2 {
         font-size: 35px;
-        margin-top: 70px;
         text-align: center;
+        color: rgb(255, 255, 255);
+        
     }
 
     .card {
@@ -76,6 +98,7 @@ main {
                 }
             }
         }
+
         .card-about:hover {
             font-variation-settings: "wght" 20;
             box-shadow: 0px 8px 15px 0px rgba(186, 154, 154, 0.161);
@@ -88,7 +111,8 @@ main {
     .new {
         width: 100%;
         height: 60vh;
-        background-color: rgb(172, 162, 162);
+        background-color: rgb(210, 205, 205);
+
         p {
             width: 15cm;
             text-align: center;
@@ -126,7 +150,6 @@ main {
 
 .experience {
     width: 100%;
-    transition: 0.4s;
 
     .experience,
     h2 {
@@ -146,6 +169,7 @@ main {
         }
 
         img {
+            transition: 0.4s;
             width: 60%;
         }
 
@@ -153,7 +177,7 @@ main {
             font-variation-settings: "wght" 20;
             box-shadow: 0px 8px 15px 0px rgba(4, 2, 2, 0.161);
             transform: scale(1.05, 1.05);
-             opacity: 9;
+            opacity: 9;
         }
     }
 
