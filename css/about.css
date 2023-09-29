@@ -215,8 +215,7 @@ footer .about-company {
   width: 40%;
 }
 footer .about-company p {
-  margin: 0;
-  padding: 0;
+  margin: 5px;
 }
 footer .center-ft {
   width: 25%;
@@ -227,24 +226,33 @@ footer .center-ft {
 footer .center-ft .list-of-music {
   margin-bottom: 20px;
 }
-footer .center-ft .list-of-music ul {
-  list-style: none;
-  padding: 0;
-}
 footer .center-ft .list-of-music ul li {
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  list-style: none;
+}
+footer .center-ft .list-of-music ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .center-ft .list-of-music ul li a:hover {
+  border-bottom: 2px solid orange;
 }
 footer .center-ft .follow-us {
   margin-bottom: 20px;
 }
 footer .center-ft .follow-us ul {
-  list-style: none;
-  padding: 0;
+  gap: 10px;
+  display: flex;
 }
 footer .center-ft .follow-us ul li {
-  margin: 0;
-  padding: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+footer .center-ft .follow-us ul li .icon-media {
+  width: 30px;
+}
+footer .center-ft .follow-us ul li .icon-media:hover {
+  border-bottom: 2px solid orange;
 }
 footer .our-contact {
   margin-bottom: 20px;

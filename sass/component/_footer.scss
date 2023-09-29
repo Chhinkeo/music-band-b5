@@ -1,63 +1,82 @@
 @import "variable";
 @import "mixin";
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
 footer {
-	background-color: #333;
-	color: $white;
-	padding: 20px;
-	display: flex;
-	justify-content: space-between;
-	gap: 5%;
-	.about-company {
-		margin-bottom: 20px;
-		width: 40%;
-		p {
-			margin: 0;
-			padding: 0;
-		}
-	}
+    background-color: #333;
+    color: $white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+
+    .about-company {
+        margin-bottom: 20px;
+        width: 40%;
+
+        p {
+            margin: 5px;
+        }
+    }
+
     .center-ft {
         width: 25%;
         display: flex;
         justify-content: space-between;
         gap: 20px;
+
         .list-of-music {
             margin-bottom: 20px;
+
             ul {
                 li {
-                    margin: 0;
-                    padding: 0;
+                    margin: 5px;
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+
+                    a:hover {
+                        border-bottom: 2px solid orange;
+                    }
                 }
-                list-style: none;
-                padding: 0;
             }
         }
+
         .follow-us {
             margin-bottom: 20px;
+
             ul {
+                gap: 10px;
+                display: flex;
                 li {
-                    margin: 0;
-                    padding: 0;
+                    list-style: none;
+                    margin-top: 10px;
+                    .icon-media{
+                        width: 30px;
+                    }
+                    .icon-media:hover{
+                        border-bottom: 2px solid orange;
+                    }
                 }
-                list-style: none;
-                padding: 0;
+
             }
         }
     }
 
-	.our-contact {
-		margin-bottom: 20px;
-		p {
-			margin: 0;
-			padding: 0;
-			margin-top: 5px;
-		}
-	}
-}
+    .our-contact {
+        margin-bottom: 20px;
 
+        p {
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+        }
+    }
+}
