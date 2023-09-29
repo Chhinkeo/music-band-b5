@@ -35,7 +35,7 @@
             }
         }
         .discription{
-            width: 400px;
+            width: 350px;
         }
         .type-music{
             h2{
@@ -45,10 +45,10 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 .card-music{
-                    height: 37vh;
+                    height: 20vh;
                     p{
-                        font-size: 15px;
-                        margin-top: 5px;
+                        font-size: 13px;
+                        margin-top: 1px;
                     }
                 }
             }

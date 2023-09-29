@@ -6,7 +6,9 @@
 
 @import "component/variable";
 @import "component/navbar";
-
+.menu>ul>li:nth-child(3)>a{
+    background-color: rgba(0, 0, 0, 0.267);
+}
 .cantact-ccontainer {
     background-image: url(/image/bg_contact.jpg);
     background-repeat: no-repeat;
