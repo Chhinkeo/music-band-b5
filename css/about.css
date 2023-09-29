@@ -68,10 +68,29 @@ nav {
   }
 }
 body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.fixed-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(/image/change.jpg);
-  background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.container {
+  background: linear-gradient(to top right, rgba(20, 20, 20, 0.814), rgba(21, 21, 21, 0.75));
+  width: 100%;
+  height: 300vh;
+  position: absolute;
+  z-index: -1;
 }
 
 .menu > ul > li:nth-child(2) > a {
@@ -87,13 +106,6 @@ header {
   flex-direction: column;
   color: white;
 }
-header .color-overlay {
-  background: linear-gradient(to top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-  width: 100%;
-  height: 70vh;
-  opacity: 0.8;
-  position: absolute;
-}
 header h1 {
   z-index: 1111;
 }
@@ -103,13 +115,6 @@ header p {
   z-index: 1111;
 }
 
-main .ourteam .color-overlay {
-  background: linear-gradient(to top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-  width: 100%;
-  height: 80vh;
-  opacity: 0.8;
-  position: absolute;
-}
 main .ourteam h2 {
   font-size: 35px;
   text-align: center;
@@ -123,7 +128,7 @@ main .ourteam .card {
   grid-template-columns: repeat(3, 1fr);
 }
 main .ourteam .card .card-about {
-  background-color: rgba(128, 128, 128, 0.396);
+  background-color: white;
   width: 70%;
   box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
   display: flex;
@@ -186,6 +191,7 @@ main .new .icone .icone1 h3 {
 }
 main .experience {
   width: 100%;
+  color: white;
 }
 main .experience .experience,
 main .experience h2 {
