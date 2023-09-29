@@ -6,17 +6,17 @@
 
 @import "component/navbar";
 @import "component/mixin";
-<<<<<<< HEAD
+body{
+//  background-image: url(/image/355432223_257742393538800_3014726784789890214_n\ \(1\).jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
 .menu>ul>li:nth-child(2)>a{
     background-color: rgba(0, 0, 0, 0.267);
 }
 header{
-=======
-header {
->>>>>>> 8439dbe063524aae3118168a4cfe3e6d42781ff3
     width: 100%;
     height: 70vh;
-    background-image: url(/image/355432223_257742393538800_3014726784789890214_n\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -49,13 +49,15 @@ main {
         grid-template-columns: repeat(3, 1fr);
 
         .card-about {
+            background-color: rgba(128, 128, 128, 0.396);
             width: 70%;
             box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
             @include center;
             flex-direction: column;
             margin: auto;
             padding: 20px;
-            border: 2px solid rgb(203, 155, 66);
+            border: 2px solid rgb(178, 178, 178);
+            transition: 0.4s;
 
             img {
                 width: 200px;
@@ -78,15 +80,19 @@ main {
             font-variation-settings: "wght" 20;
             box-shadow: 0px 8px 15px 0px rgba(186, 154, 154, 0.161);
             transform: scale(1.05, 1.05);
+            opacity: 9
         }
 
     }
 
     .new {
         width: 100%;
+        height: 60vh;
+        background-color: rgb(172, 162, 162);
         p {
             width: 15cm;
-            background-color: rgba(76, 107, 107, 0.424);
+            text-align: center;
+            margin: auto;
         }
 
         .icone {
@@ -105,6 +111,7 @@ main {
                 }
 
                 h3 {
+                    padding: 15px;
                     margin: auto;
                 }
 
@@ -119,6 +126,7 @@ main {
 
 .experience {
     width: 100%;
+    transition: 0.4s;
 
     .experience,
     h2 {
@@ -145,6 +153,7 @@ main {
             font-variation-settings: "wght" 20;
             box-shadow: 0px 8px 15px 0px rgba(4, 2, 2, 0.161);
             transform: scale(1.05, 1.05);
+             opacity: 9;
         }
     }
 
