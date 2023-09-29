@@ -6,6 +6,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 footer {
     background-color: #333;
     color: $white;
@@ -13,6 +14,24 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 5%;
+
+    li {
+        margin-top: 6px;
+        list-style: none;
+    }
+
+    p {
+        margin-top: 6px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        border-bottom: 2px solid orange;
+    }
 
     .about-company {
         margin-bottom: 20px;
@@ -31,22 +50,6 @@ footer {
 
         .list-of-music {
             margin-bottom: 20px;
-
-            ul {
-                li {
-                    margin: 5px;
-                    list-style: none;
-
-                    a {
-                        text-decoration: none;
-                        color: white;
-                    }
-
-                    a:hover {
-                        border-bottom: 2px solid orange;
-                    }
-                }
-            }
         }
 
         .follow-us {
@@ -55,28 +58,14 @@ footer {
             ul {
                 gap: 10px;
                 display: flex;
-                li {
-                    list-style: none;
-                    margin-top: 10px;
-                    .icon-media{
-                        width: 30px;
-                    }
-                    .icon-media:hover{
-                        border-bottom: 2px solid orange;
-                    }
+                .icon-media {
+                    width: 30px;
                 }
-
             }
         }
-    }
 
-    .our-contact {
-        margin-bottom: 20px;
-
-        p {
-            margin: 0;
-            padding: 0;
-            margin-top: 5px;
+        .our-contact {
+            margin-bottom: 20px;
         }
     }
 }
