@@ -89,8 +89,6 @@ nav {
 }
 .cantact-container .contact-box .img-txt {
   width: 400px;
-  background: white;
-  background: rgba(1, 22, 39, 0.5254901961);
   background: #011627;
   padding: 3%;
   border-radius: 3% 0% 0% 3%;
@@ -205,7 +203,6 @@ footer .center-ft .our-contact {
 
 @media screen and (max-width: 768px) {
   .contact-box {
-    background: blue;
     width: 100%;
     display: flex;
   }
@@ -217,13 +214,22 @@ footer .center-ft .our-contact {
     border-radius: 150px;
   }
   form {
-    width: 30px;
-    background: #000;
+    margin-top: 20%;
+    margin-right: 10px;
+    border-radius: 3%;
   }
 }
 @media screen and (max-width: 768px) {
   footer {
     flex-direction: column;
+  }
+  footer h3 {
+    color: rgb(240, 227, 227);
+    font-size: 15px;
+  }
+  footer p, footer a {
+    color: rgb(183, 181, 181);
+    font-size: 12px;
   }
   footer .about-company {
     width: 100%;
