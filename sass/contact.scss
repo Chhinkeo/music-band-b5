@@ -6,11 +6,9 @@
 
 @import "component/variable";
 @import "component/navbar";
-.menu>ul>li:nth-child(3)>a{
-    background-color: rgba(0, 0, 0, 0.267);
-}
+
 .cantact-container {
-    background-image: url(/image/bgn-cnt.avif);
+    background-image: url(/image/background\ cnt.jpg);
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,13 +37,11 @@
         form {
             width: 400px;
             background:#411b0083;
-            background: ghostwhite;
-            border: 2px solid orange;
             padding: 3%;
             
             border-radius: 0% 3% 3% 0%;
             .send-sms {
-                color: black;
+                color: white;
                 text-align: center;
             }
     
@@ -91,6 +87,6 @@
    
 }
 
-@import "component/footer";
 @import "mixin/responsive-contact";
 @import "mixin/responsive-footer";
+@import "component/footer";
