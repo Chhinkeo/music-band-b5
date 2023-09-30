@@ -9,25 +9,20 @@
 .menu>ul>li:nth-child(3)>a{
     background-color: rgba(0, 0, 0, 0.267);
 }
-.cantact-ccontainer {
-    // background-image: url(/image/cnt-img.png);
-    // background: #000;
+.cantact-container {
     background-image: url(/image/bgn-cnt.avif);
-
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    // position: relative;
-    //   background-position: center ;
+    position: relative;
+    background-position: center ;
     margin-top: 3%;
     padding: 2%;
     display: flex;
-    // justify-content: flex-end;
-    // justify-content: center;
-
     .contact-box{
-        // border: 1px solid red;
+        padding: 2%;
         display: flex;
+
         .img-txt{
             width: 400px;
             background:white;
@@ -40,21 +35,18 @@
                 border-radius: 150px;
             }
             p{
-                // margin-top: 40px;
             }
         }
         form {
             width: 400px;
             background:#411b0083;
             background: ghostwhite;
-            background: rgb(51, 45, 45);
-            border: 1px solid rgba(255, 166, 0, 0.423);
+            border: 2px solid orange;
             padding: 3%;
             
             border-radius: 0% 3% 3% 0%;
             .send-sms {
                 color: black;
-                color: white;
                 text-align: center;
             }
     
@@ -84,13 +76,13 @@
                 #send {
                     width: 30%;
                     height: 40px;
-                    background: #2d2621c2;
+                    background: #0d1321;
                     color: white;
                     border: none;
                     border-radius: 50px;
                 }
                 #send:hover {
-                    background: #0d1321;
+                    background: #4f000b;
                     border: 1px solid orange;
                 }
                 

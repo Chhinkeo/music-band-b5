@@ -32,13 +32,14 @@ nav {
 }
 
 .menu {
-  width: 600px;
+  width: 400px;
   display: flex;
-  justify-content: space-evenly;
 }
 .menu ul {
+  width: 100%;
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
 }
 .menu ul li {
   padding: 16px 0;
@@ -71,19 +72,22 @@ nav {
   background-color: rgba(0, 0, 0, 0.267);
 }
 
-.cantact-ccontainer {
+.cantact-container {
   background-image: url(/image/bgn-cnt.avif);
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  background-position: center;
   margin-top: 3%;
   padding: 2%;
   display: flex;
 }
-.cantact-ccontainer .contact-box {
+.cantact-container .contact-box {
+  padding: 2%;
   display: flex;
 }
-.cantact-ccontainer .contact-box .img-txt {
+.cantact-container .contact-box .img-txt {
   width: 400px;
   background: white;
   background: rgba(1, 22, 39, 0.5254901961);
@@ -91,55 +95,53 @@ nav {
   padding: 3%;
   border-radius: 3% 0% 0% 3%;
 }
-.cantact-ccontainer .contact-box .img-txt img {
+.cantact-container .contact-box .img-txt img {
   margin-left: 20%;
   border-radius: 150px;
 }
-.cantact-ccontainer .contact-box form {
+.cantact-container .contact-box form {
   width: 400px;
   background: rgba(65, 27, 0, 0.5137254902);
   background: ghostwhite;
-  background: rgb(51, 45, 45);
-  border: 1px solid rgba(255, 166, 0, 0.423);
+  border: 2px solid orange;
   padding: 3%;
   border-radius: 0% 3% 3% 0%;
 }
-.cantact-ccontainer .contact-box form .send-sms {
+.cantact-container .contact-box form .send-sms {
   color: black;
-  color: white;
   text-align: center;
 }
-.cantact-ccontainer .contact-box form input {
+.cantact-container .contact-box form input {
   width: 93%;
   height: 20px;
   padding: 3%;
 }
-.cantact-ccontainer .contact-box form #username,
-.cantact-ccontainer .contact-box form #email,
-.cantact-ccontainer .contact-box form #message,
-.cantact-ccontainer .contact-box form #send {
+.cantact-container .contact-box form #username,
+.cantact-container .contact-box form #email,
+.cantact-container .contact-box form #message,
+.cantact-container .contact-box form #send {
   border: 1px solid rgba(128, 128, 128, 0.367);
   border-radius: 7px;
   margin-top: 5%;
 }
-.cantact-ccontainer .contact-box form textarea {
+.cantact-container .contact-box form textarea {
   width: 93%;
   padding: 3%;
 }
-.cantact-ccontainer .contact-box form .container-send {
+.cantact-container .contact-box form .container-send {
   display: flex;
   justify-content: flex-end;
 }
-.cantact-ccontainer .contact-box form .container-send #send {
+.cantact-container .contact-box form .container-send #send {
   width: 30%;
   height: 40px;
-  background: rgba(45, 38, 33, 0.7607843137);
+  background: #0d1321;
   color: white;
   border: none;
   border-radius: 50px;
 }
-.cantact-ccontainer .contact-box form .container-send #send:hover {
-  background: #0d1321;
+.cantact-container .contact-box form .container-send #send:hover {
+  background: #4f000b;
   border: 1px solid orange;
 }
 
@@ -201,9 +203,22 @@ footer .center-ft .our-contact {
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .img-txt {
+@media screen and (max-width: 768px) {
+  .contact-box {
+    background: blue;
+    width: 100%;
+    display: flex;
+  }
+  .contact-box .img-txt {
     display: none;
+  }
+  .contact-box .img-txt img {
+    margin-left: 20%;
+    border-radius: 150px;
+  }
+  form {
+    width: 30px;
+    background: #000;
   }
 }
 @media screen and (max-width: 768px) {

@@ -38,7 +38,7 @@ body {
 
 header {
     width: 100%;
-    height: 70vh;
+    height: 68vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,11 +71,11 @@ main {
             padding-bottom: 56px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-    
+
             .card-about {
-                background-color: white;
+                background-color: rgba(180, 171, 171, 0.137);
                 width: 70%;
-                box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
+                box-shadow: 0px 2px 15px 0px rgb(152, 146, 146);
                 @include center;
                 flex-direction: column;
                 margin: auto;
@@ -90,6 +90,7 @@ main {
                 .text {
                     text-align: center;
                     font-size: 15px;
+                    color: white;
     
                     h3 {
                         gap: 80px;
@@ -100,7 +101,6 @@ main {
                     }
                 }
             }
-    
             .card-about:hover {
                 font-variation-settings: "wght" 20;
                 box-shadow: 0px 8px 15px 0px rgba(186, 154, 154, 0.161);
@@ -112,12 +112,12 @@ main {
     .new {
         width: 100%;
         height: 60vh;
-        background-color: rgb(210, 205, 205);
 
         p {
             width: 15cm;
             text-align: center;
             margin: auto;
+            color: white;
         }
 
         .icone {
@@ -140,6 +140,7 @@ main {
                 h3 {
                     padding: 15px;
                     margin: auto;
+                    color: white;
                 }
 
 
@@ -147,13 +148,30 @@ main {
         }
 
     }
+    .follow{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .follow-1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px;
+            color: white;
+            h2{
+                font-size: 40px;
+            }
+
+    }}
     .experience {
         width: 100%;
         color: white;
     
         .experience,
-        h2 {
+        h1 {
             padding: 20px;
+            text-align: center;
         }
     
         .card-experience {
@@ -167,7 +185,6 @@ main {
                 text-align: left;
                 padding-right: 90px;
             }
-    
             img {
                 transition: 0.4s;
                 width: 60%;

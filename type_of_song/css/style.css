@@ -41,8 +41,10 @@ nav {
 }
 
 .menu ul {
+    width: 100%;
     list-style: none;
-    display: flex
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .menu ul li {
