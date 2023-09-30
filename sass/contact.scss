@@ -11,63 +11,85 @@
 }
 .cantact-ccontainer {
     background-image: url(/image/bg_contact.jpg);
+    // background: #000;
+    color: white;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     margin-top: 4%;
     padding: 2%;
     display: flex;
-    justify-content: flex-end;
+    // justify-content: flex-end;
+    // justify-content: center;
 
-    form {
-        width: 500px;
-        background:#411b0083;
-        padding: 3%;
-        border-radius: 3%;
-
-        .send-sms {
-            color: white;
-            text-align: center;
-        }
-
-        input {
-            width: 93%;
-            height: 20px;
+    .contact-box{
+        // border: 1px solid red;
+        display: flex;
+        .img-txt{
+            width: 500px;
+            background:white;
+            background:#01162786;
             padding: 3%;
+            border-radius: 3% 0% 0% 3%;
+            img{
+                margin-left: 20%;
+                border-radius: 150px;
+            }
+            p{
+                margin-top: 40px;
+            }
         }
-        #username,
-        #email,
-        #message,
-        #send {
-            border: none;
-            border-radius: 7px;
-            margin-top: 5%;
-        }
-
-        textarea {
-            width: 93%;
+        form {
+            width: 500px;
+            background:#411b0083;
             padding: 3%;
-        }
-
-        .container-send {
-            display: flex;
-            justify-content: flex-end;
-            
-            #send {
-                width: 30%;
-                height: 40px;
-                background: #ff6d00;
+            border-radius: 0% 3% 3% 0%;
+    
+            .send-sms {
                 color: white;
+                text-align: center;
+            }
+    
+            input {
+                width: 93%;
+                height: 20px;
+                padding: 3%;
+            }
+            #username,
+            #email,
+            #message,
+            #send {
                 border: none;
-                border-radius: 50px;
+                border-radius: 7px;
+                margin-top: 5%;
             }
-            #send:hover {
-                background: #0d1321;
-                border: 1px solid orange;
+    
+            textarea {
+                width: 93%;
+                padding: 3%;
             }
-            
+    
+            .container-send {
+                display: flex;
+                justify-content: flex-end;
+                
+                #send {
+                    width: 30%;
+                    height: 40px;
+                    background: #ff6d00;
+                    color: white;
+                    border: none;
+                    border-radius: 50px;
+                }
+                #send:hover {
+                    background: #0d1321;
+                    border: 1px solid orange;
+                }
+                
+            }
         }
     }
+   
 }
 
 @import "component/footer";
