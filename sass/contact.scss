@@ -10,13 +10,16 @@
     background-color: rgba(0, 0, 0, 0.267);
 }
 .cantact-ccontainer {
-    background-image: url(/image/bg_contact.jpg);
+    // background-image: url(/image/cnt-img.png);
     // background: #000;
+    background-image: url(/image/bgn-cnt.avif);
+
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    margin-top: 4%;
+    // position: relative;
+    //   background-position: center ;
+    margin-top: 3%;
     padding: 2%;
     display: flex;
     // justify-content: flex-end;
@@ -26,9 +29,10 @@
         // border: 1px solid red;
         display: flex;
         .img-txt{
-            width: 500px;
+            width: 400px;
             background:white;
             background:#01162786;
+            background:#011627;
             padding: 3%;
             border-radius: 3% 0% 0% 3%;
             img{
@@ -40,12 +44,16 @@
             }
         }
         form {
-            width: 500px;
+            width: 400px;
             background:#411b0083;
+            background: ghostwhite;
+            background: rgb(51, 45, 45);
+            border: 1px solid rgba(255, 166, 0, 0.423);
             padding: 3%;
+            
             border-radius: 0% 3% 3% 0%;
-    
             .send-sms {
+                color: black;
                 color: white;
                 text-align: center;
             }
@@ -59,7 +67,7 @@
             #email,
             #message,
             #send {
-                border: none;
+                border: 1px solid rgba(128, 128, 128, 0.367);
                 border-radius: 7px;
                 margin-top: 5%;
             }
@@ -76,7 +84,7 @@
                 #send {
                     width: 30%;
                     height: 40px;
-                    background: #ff6d00;
+                    background: #2d2621c2;
                     color: white;
                     border: none;
                     border-radius: 50px;

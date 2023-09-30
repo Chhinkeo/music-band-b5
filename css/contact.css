@@ -72,12 +72,11 @@ nav {
 }
 
 .cantact-ccontainer {
-  background-image: url(/image/bg_contact.jpg);
+  background-image: url(/image/bgn-cnt.avif);
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  margin-top: 4%;
+  margin-top: 3%;
   padding: 2%;
   display: flex;
 }
@@ -85,9 +84,10 @@ nav {
   display: flex;
 }
 .cantact-ccontainer .contact-box .img-txt {
-  width: 500px;
+  width: 400px;
   background: white;
   background: rgba(1, 22, 39, 0.5254901961);
+  background: #011627;
   padding: 3%;
   border-radius: 3% 0% 0% 3%;
 }
@@ -96,12 +96,16 @@ nav {
   border-radius: 150px;
 }
 .cantact-ccontainer .contact-box form {
-  width: 500px;
+  width: 400px;
   background: rgba(65, 27, 0, 0.5137254902);
+  background: ghostwhite;
+  background: rgb(51, 45, 45);
+  border: 1px solid rgba(255, 166, 0, 0.423);
   padding: 3%;
   border-radius: 0% 3% 3% 0%;
 }
 .cantact-ccontainer .contact-box form .send-sms {
+  color: black;
   color: white;
   text-align: center;
 }
@@ -114,7 +118,7 @@ nav {
 .cantact-ccontainer .contact-box form #email,
 .cantact-ccontainer .contact-box form #message,
 .cantact-ccontainer .contact-box form #send {
-  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.367);
   border-radius: 7px;
   margin-top: 5%;
 }
@@ -129,7 +133,7 @@ nav {
 .cantact-ccontainer .contact-box form .container-send #send {
   width: 30%;
   height: 40px;
-  background: #ff6d00;
+  background: rgba(45, 38, 33, 0.7607843137);
   color: white;
   border: none;
   border-radius: 50px;
