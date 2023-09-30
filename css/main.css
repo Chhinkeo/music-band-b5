@@ -221,85 +221,65 @@ main .event .group-event .schedule .time-event .place button:hover {
   transform: scale(1.05, 1.05);
 }
 
-footer {
-  background: black;
-  color: white;
-  padding: 2%;
-  display: flex;
-  gap: 5%;
-}
-footer .about-ft {
-  width: 500px;
-  border: 1px solid red;
-}
-footer .about-ft .logo-name {
-  width: 70%;
-  background: orange;
-  display: flex;
-  display: flex;
-  justify-content: space-between;
-}
-footer .lst-music-ft {
-  border: 1px solid red;
-}
-footer .lst-music-ft .link-music li {
-  list-style: none;
-}
-footer .lst-music-ft .link-music li a {
-  text-decoration: none;
-  color: white;
-}
-footer .social-media-ft {
-  border: 1px solid red;
-}
-footer .social-media-ft .media-txt-ft {
-  color: white;
-}
-footer .social-media-ft .icon-media {
-  width: 40px;
-}
-footer .contact-ft {
-  border: 1px solid red;
-}
-footer .contact-ft .tell-container {
-  display: flex;
-  color: white;
-  text-decoration: none;
-}
-footer .contact-ft .tell-container .icon-cnt {
-  width: 40px;
-}
-footer .contact-ft .tell-container .tell {
-  margin-left: 10px;
-  align-self: center;
-}
-footer .contact-ft .email-container {
-  display: flex;
-  margin-top: 7px;
-  color: white;
-  text-decoration: none;
-}
-footer .contact-ft .email-container .icon-cnt {
-  width: 40px;
-}
-footer .contact-ft .email-container .email {
-  margin-left: 10px;
-  align-self: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 768px) {
-  footer {
-    display: block;
-    padding: 8%;
-    padding-bottom: 30px;
-  }
-  footer .about-ft {
-    width: 100%;
-  }
-  footer .about-ft .logo-name {
-    width: 60%;
-  }
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
 }
+footer .about-company {
+  margin-bottom: 20px;
+  width: 40%;
+}
+footer .about-company p {
+  margin: 0;
+  padding: 0;
+}
+footer .center-ft {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+footer .center-ft .list-of-music {
+  margin-bottom: 20px;
+}
+footer .center-ft .list-of-music ul {
+  list-style: none;
+  padding: 0;
+}
+footer .center-ft .list-of-music ul li {
+  margin: 0;
+  padding: 0;
+}
+footer .center-ft .follow-us {
+  margin-bottom: 20px;
+}
+footer .center-ft .follow-us ul {
+  list-style: none;
+  padding: 0;
+}
+footer .center-ft .follow-us ul li {
+  margin: 0;
+  padding: 0;
+}
+footer .our-contact {
+  margin-bottom: 20px;
+}
+footer .our-contact p {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+}
+
 @media (min-width: 700px) and (max-width: 1024px) {
   main .type-music .group-card {
     display: grid;
@@ -362,4 +342,32 @@ footer .contact-ft .email-container .email {
   main .event .group-event .schedule .time-event .place {
     padding: 10px 0;
   }
+<<<<<<< HEAD
 }
+=======
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .about-company {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .center-ft {
+    width: 100%;
+  }
+  footer .center-ft .list-of-music {
+    margin-bottom: 20px;
+  }
+  footer .center-ft .follow-us {
+    margin-bottom: 20px;
+  }
+  footer .our-contact {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    border-top: 1px solid gray;
+  }
+}/*# sourceMappingURL=main.css.map */
+>>>>>>> d961c5fdb4378d64a4180e9e03324f835a65e45b

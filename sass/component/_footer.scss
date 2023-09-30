@@ -1,114 +1,63 @@
+@import "variable";
 @import "mixin";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 footer {
-    // background: #1d3557;
-    background: black;
-    color: white;
-    padding: 2%;
-    display: flex;
-    gap: 5%;
-
-    .about-ft {
-        width: 500px;
-        border: 1px solid red;
-
-        .logo-name {
-            width: 70%;
-            background: orange;
-            display: flex;
-            @include space-between;
-
-            .logo {}
-
-            .suffer {}
-        }
-
-        #suffer-txt {}
-    }
-
-    .lst-music-ft {
-        // width: 20%;
-        border: 1px solid red;
-
-        .lst-music {}
-
-        .link-music { 
-
-            li { 
-                list-style: none;
-        
-                a { 
-                    text-decoration: none;
-                    color: white;
+	background-color: #333;
+	color: $white;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	gap: 5%;
+	.about-company {
+		margin-bottom: 20px;
+		width: 40%;
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+    .center-ft {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        .list-of-music {
+            margin-bottom: 20px;
+            ul {
+                li {
+                    margin: 0;
+                    padding: 0;
                 }
+                list-style: none;
+                padding: 0;
+            }
+        }
+        .follow-us {
+            margin-bottom: 20px;
+            ul {
+                li {
+                    margin: 0;
+                    padding: 0;
+                }
+                list-style: none;
+                padding: 0;
             }
         }
     }
 
-    .social-media-ft {
-        // width: 20%;
-        border: 1px solid red;
-
-        .media-txt-ft {
-            color: white;
-        }
-
-        .icon-media {
-            width: 40px;
-        }
-    }
-
-    .contact-ft {
-        // width: 20%;
-        border: 1px solid red;
-
-        .tell-container {
-            display: flex;
-            color: white;
-            text-decoration: none;
-
-            .icon-cnt {
-                width: 40px;
-            }
-
-            .tell {
-                margin-left: 10px;
-                align-self: center;
-
-            }
-        }
-
-        .email-container {
-            display: flex;
-            margin-top: 7px;
-            color: white;
-            text-decoration: none;
-
-            .icon-cnt {
-                width: 40px;
-            }
-
-            .email {
-                margin-left: 10px;
-                align-self: center;
-
-            }
-        }
-    }
-
+	.our-contact {
+		margin-bottom: 20px;
+		p {
+			margin: 0;
+			padding: 0;
+			margin-top: 5px;
+		}
+	}
 }
 
-@media (max-width:768px) {
-    footer {
-        display: block;
-        padding: 8%;
-        padding-bottom: 30px;
-
-        .about-ft {
-            width: 100%;
-
-            .logo-name {
-                width: 60%;
-            }
-        }
-    }
-}

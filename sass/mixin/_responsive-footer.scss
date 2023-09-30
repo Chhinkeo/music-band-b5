@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+	footer {
+		flex-direction: column;
+		.about-company {
+            width: 100%;
+			margin-bottom: 20px;
+		}
+        .center-ft {
+            width: 100%;
+            .list-of-music {
+                margin-bottom: 20px;
+            }
+            .follow-us {
+                margin-bottom: 20px;
+            }
+           
+        }
+        .our-contact {
+            margin-bottom: 20px;
+            margin-top: 5px;
+            text-align: center;
+            border-top: 1px solid gray;
+        }
+		
+	}	
+}
