@@ -32,13 +32,14 @@ nav {
 }
 
 .menu {
-  width: 600px;
+  width: 400px;
   display: flex;
-  justify-content: space-evenly;
 }
 .menu ul {
+  width: 100%;
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
 }
 .menu ul li {
   padding: 16px 0;
@@ -94,9 +95,6 @@ nav {
 .cantact-ccontainer .contact-box .img-txt img {
   margin-left: 20%;
   border-radius: 150px;
-}
-.cantact-ccontainer .contact-box .img-txt p {
-  margin-top: 40px;
 }
 .cantact-ccontainer .contact-box form {
   width: 500px;
