@@ -128,9 +128,9 @@ main .ourteam .card {
   grid-template-columns: repeat(3, 1fr);
 }
 main .ourteam .card .card-about {
-  background-color: rgba(255, 255, 255, 0.956);
+  background-color: rgba(180, 171, 171, 0.137);
   width: 70%;
-  box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
+  box-shadow: 0px 2px 15px 0px rgb(152, 146, 146);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,6 +146,7 @@ main .ourteam .card .card-about img {
 main .ourteam .card .card-about .text {
   text-align: center;
   font-size: 15px;
+  color: white;
 }
 main .ourteam .card .card-about .text h3 {
   gap: 80px;
@@ -363,4 +364,4 @@ footer .center-ft .our-contact {
     text-align: center;
     border-top: 1px solid gray;
   }
-}
+}/*# sourceMappingURL=about.css.map */

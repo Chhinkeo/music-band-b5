@@ -71,11 +71,11 @@ main {
             padding-bottom: 56px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-    
+
             .card-about {
-                background-color: rgba(255, 255, 255, 0.956);
+                background-color: rgba(180, 171, 171, 0.137);
                 width: 70%;
-                box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
+                box-shadow: 0px 2px 15px 0px rgb(152, 146, 146);
                 @include center;
                 flex-direction: column;
                 margin: auto;
@@ -90,6 +90,7 @@ main {
                 .text {
                     text-align: center;
                     font-size: 15px;
+                    color: white;
     
                     h3 {
                         gap: 80px;
@@ -100,7 +101,6 @@ main {
                     }
                 }
             }
-    
             .card-about:hover {
                 font-variation-settings: "wght" 20;
                 box-shadow: 0px 8px 15px 0px rgba(186, 154, 154, 0.161);
@@ -135,7 +135,6 @@ main {
                     width: 200px;
                     border: 2px solid black;
                     border-radius: 10px;
-                    // opacity: 9;
                 }
 
                 h3 {
