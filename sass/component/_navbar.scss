@@ -27,12 +27,13 @@ nav{
 }
 
 .menu{
-    width: 600px;
+    width: 400px;
     display: flex;
-    justify-content: space-evenly;
     ul{
+        width: 100%;
         list-style: none;
         display: flex;
+        justify-content: space-evenly;
 
         li{
             padding: 16px 0;
