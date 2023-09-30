@@ -162,7 +162,6 @@ main .ourteam .card .card-about:hover {
 }
 main .new {
   width: 100%;
-  height: 60vh;
 }
 main .new p {
   width: 15cm;
@@ -297,15 +296,54 @@ footer .center-ft .our-contact {
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-  main .card {
+  .container header {
+    height: 48vh;
+  }
+  .container main .ourteam .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .container main .ourteam .card .card-about {
+    gap: 25px;
     display: flex;
     flex-direction: row;
   }
-  main .card-experience {
-    gap: 35px;
+  .container main .ourteam .card .card-about .text {
+    display: flex;
+    flex-direction: column;
   }
-  main .card-experience p {
-    text-align: left;
+  .container main .ourteam .card .card-about:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .container main .new {
+    display: grid;
+  }
+  .container main .new .icone {
+    display: grid;
+    justify-content: center;
+  }
+  .container main .new .icone .icone1 {
+    margin-top: -50px;
+  }
+  .container main .new .icone .icone1 img {
+    width: 300px;
+    height: 200px;
+  }
+  .container main .card-experience {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .container main .card-experience img {
+    align-self: center;
+  }
+  .container main .card-experience p {
+    text-align: justify;
+    width: 90%;
+    margin-left: -33px;
   }
 }
 @media (max-width: 599px) {
@@ -360,4 +398,4 @@ footer .center-ft .our-contact {
     text-align: center;
     border-top: 1px solid gray;
   }
-}
+}/*# sourceMappingURL=about.css.map */

@@ -1,24 +1,73 @@
 @media (min-width: 600px) and (max-width: 1024px) {
-    main {
-        .card {
-          display: flex;
-          flex-direction: row;
+    .container {
+        header {
+            height: 48vh;
         }
 
-        .card-experience {
-            gap: 35px;
+        main {
+            .ourteam {
+                .card {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
 
-            p {
-                text-align: left;
+                    .card-about {
+                        gap: 25px;
+                        display: flex;
+                        flex-direction: row;
+
+                        .text {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+
+                    .card-about:nth-child(2) {
+                        display: flex;
+                        flex-direction: row-reverse;
+                    }
+                }
             }
 
-     
+            .new {
+                display: grid;
+
+                .icone {
+                    display: grid;
+                    justify-content: center;
+
+                    .icone1 {
+
+                        margin-top: -50px;
+
+                        img {
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+
+
+            .card-experience{
+                height: 65vh;
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+                img{
+                    align-self: center;
+                }p{
+                    text-align: justify;
+                    width: 90%;
+                    margin-left: -33px;
+                }
+
+            }
         }
-   
-   
-   
     }
+
 }
+
 
 @media (max-width:599px) {
     main {
@@ -37,9 +86,10 @@
                 display: flex;
                 flex-wrap: wrap;
 
-                img{
-                   border: 2px solid rgb(220, 143, 0);
+                img {
+                    border: 2px solid rgb(220, 143, 0);
                 }
+
                 img,
                 p {
                     margin: auto;
