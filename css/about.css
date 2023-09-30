@@ -333,6 +333,14 @@ footer .center-ft .our-contact {
   footer {
     flex-direction: column;
   }
+  footer h3 {
+    color: rgb(240, 227, 227);
+    font-size: 15px;
+  }
+  footer p, footer a {
+    color: rgb(183, 181, 181);
+    font-size: 12px;
+  }
   footer .about-company {
     width: 100%;
     margin-bottom: 20px;

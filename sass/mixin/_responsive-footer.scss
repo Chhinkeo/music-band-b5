@@ -1,6 +1,14 @@
 @media screen and (max-width: 768px) {
 	footer {
 		flex-direction: column;
+        h3{
+            color: rgb(240, 227, 227);
+            font-size: 15px;
+        }
+        p,a{
+            color: rgb(183, 181, 181);
+            font-size: 12px;
+        }
 		.about-company {
             width: 100%;
 			margin-bottom: 20px;
