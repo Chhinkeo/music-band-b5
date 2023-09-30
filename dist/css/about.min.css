@@ -67,6 +67,32 @@ nav {
     padding: 16px 10px;
   }
 }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.fixed-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/change.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.container {
+  background: linear-gradient(to top right, rgba(20, 20, 20, 0.814), rgba(21, 21, 21, 0.75));
+  width: 100%;
+  height: 300vh;
+  position: absolute;
+  z-index: -1;
+}
+
 .menu > ul > li:nth-child(2) > a {
   background-color: rgba(0, 0, 0, 0.267);
 }
@@ -74,33 +100,35 @@ nav {
 header {
   width: 100%;
   height: 70vh;
-  background-image: url(/image/355432223_257742393538800_3014726784789890214_n\ \(1\).jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
 }
+header h1 {
+  z-index: 1111;
+}
 header p {
   padding: 15px;
   width: 15cm;
+  z-index: 1111;
 }
 
-main h2 {
+main .ourteam h2 {
   font-size: 35px;
-  margin-top: 70px;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
-main .card {
+main .ourteam .card {
   width: 100%;
   margin-top: 56px;
   padding-bottom: 56px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-main .card .card-about {
+main .ourteam .card .card-about {
+  background-color: white;
   width: 70%;
   box-shadow: 0px 2px 15px 0px rgb(102, 103, 95);
   display: flex;
@@ -109,31 +137,61 @@ main .card .card-about {
   flex-direction: column;
   margin: auto;
   padding: 20px;
-  border: 5px solid rgb(220, 143, 0);
-  border-radius: 5px;
+  border: 2px solid rgb(178, 178, 178);
+  transition: 0.4s;
 }
-main .card .card-about img {
-  border-radius: 75px;
-  gap: 50px;
+main .ourteam .card .card-about img {
+  width: 200px;
 }
-main .card .card-about .text {
+main .ourteam .card .card-about .text {
   text-align: center;
+  font-size: 15px;
 }
-main .card .card-about .text h3 {
+main .ourteam .card .card-about .text h3 {
   gap: 80px;
 }
-main .card .card-about .text p {
+main .ourteam .card .card-about .text p {
   text-align: left;
 }
-main .card .card-about:hover {
-  font-variation-settings: "wght" 582;
-  letter-spacing: 1px;
+main .ourteam .card .card-about:hover {
+  font-variation-settings: "wght" 20;
   box-shadow: 0px 8px 15px 0px rgba(186, 154, 154, 0.161);
   transform: scale(1.05, 1.05);
+  opacity: 9;
+}
+main .new {
+  width: 100%;
+  height: 60vh;
+  background-color: rgb(210, 205, 205);
+}
+main .new p {
+  width: 15cm;
+  text-align: center;
+  margin: auto;
+}
+main .new .icone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .new .icone .icone1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+}
+main .new .icone .icone1 img {
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+main .new .icone .icone1 h3 {
+  padding: 15px;
+  margin: auto;
 }
 main .experience {
   width: 100%;
-  background-color: rgba(146, 140, 140, 0.202);
+  color: white;
 }
 main .experience .experience,
 main .experience h2 {
@@ -146,95 +204,79 @@ main .experience .card-experience {
   grid-template-columns: repeat(2, 1fr);
 }
 main .experience .card-experience p {
-  margin-top: 70px;
+  padding: 60px;
   text-align: left;
-  padding-right: 60px;
+  padding-right: 90px;
 }
 main .experience .card-experience img {
-  padding-left: 50px;
-  margin-top: 10px;
+  transition: 0.4s;
   width: 60%;
+}
+main .experience .card-experience img:hover {
+  font-variation-settings: "wght" 20;
+  box-shadow: 0px 8px 15px 0px rgba(4, 2, 2, 0.161);
+  transform: scale(1.05, 1.05);
+  opacity: 9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
-  background: black;
+  background-color: #333;
   color: white;
-  padding: 2%;
-  display: flex;
-  gap: 5%;
-}
-footer .about-ft {
-  width: 500px;
-  border: 1px solid red;
-}
-footer .about-ft .logo-name {
-  width: 70%;
-  background: orange;
-  display: flex;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
+  gap: 5%;
 }
-footer .lst-music-ft {
-  border: 1px solid red;
-}
-footer .lst-music-ft .link-music li {
+footer li {
+  margin-top: 6px;
   list-style: none;
 }
-footer .lst-music-ft .link-music li a {
+footer p {
+  margin-top: 6px;
+}
+footer a {
+  color: white;
   text-decoration: none;
-  color: white;
 }
-footer .social-media-ft {
-  border: 1px solid red;
+footer a:hover {
+  border-bottom: 2px solid orange;
 }
-footer .social-media-ft .media-txt-ft {
-  color: white;
+footer .about-company {
+  margin-bottom: 20px;
+  width: 40%;
 }
-footer .social-media-ft .icon-media {
-  width: 40px;
+footer .about-company p {
+  margin: 5px;
 }
-footer .contact-ft {
-  border: 1px solid red;
-}
-footer .contact-ft .tell-container {
+footer .center-ft {
+  width: 25%;
   display: flex;
-  color: white;
-  text-decoration: none;
+  justify-content: space-between;
+  gap: 20px;
 }
-footer .contact-ft .tell-container .icon-cnt {
-  width: 40px;
+footer .center-ft .list-of-music {
+  margin-bottom: 20px;
 }
-footer .contact-ft .tell-container .tell {
-  margin-left: 10px;
-  align-self: center;
+footer .center-ft .follow-us {
+  margin-bottom: 20px;
 }
-footer .contact-ft .email-container {
+footer .center-ft .follow-us ul {
+  gap: 10px;
   display: flex;
-  margin-top: 7px;
-  color: white;
-  text-decoration: none;
 }
-footer .contact-ft .email-container .icon-cnt {
-  width: 40px;
+footer .center-ft .follow-us ul .icon-media {
+  width: 30px;
 }
-footer .contact-ft .email-container .email {
-  margin-left: 10px;
-  align-self: center;
+footer .center-ft .our-contact {
+  margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  footer {
-    display: block;
-    padding: 8%;
-    padding-bottom: 30px;
-  }
-  footer .about-ft {
-    width: 100%;
-  }
-  footer .about-ft .logo-name {
-    width: 60%;
-  }
-}
 @media (min-width: 768px) and (max-width: 1024px) {
   main .card {
     display: flex;
@@ -278,5 +320,29 @@ footer .contact-ft .email-container .email {
   main .experience .card-experience img,
   main .experience .card-experience p {
     margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .about-company {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .center-ft {
+    width: 100%;
+  }
+  footer .center-ft .list-of-music {
+    margin-bottom: 20px;
+  }
+  footer .center-ft .follow-us {
+    margin-bottom: 20px;
+  }
+  footer .our-contact {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    border-top: 1px solid gray;
   }
 }
