@@ -74,46 +74,60 @@ nav {
 
 .cantact-ccontainer {
   background-image: url(/image/bg_contact.jpg);
+  color: white;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   margin-top: 4%;
   padding: 2%;
   display: flex;
-  justify-content: flex-end;
 }
-.cantact-ccontainer form {
+.cantact-ccontainer .contact-box {
+  display: flex;
+}
+.cantact-ccontainer .contact-box .img-txt {
+  width: 500px;
+  background: white;
+  background: rgba(1, 22, 39, 0.5254901961);
+  padding: 3%;
+  border-radius: 3% 0% 0% 3%;
+}
+.cantact-ccontainer .contact-box .img-txt img {
+  margin-left: 20%;
+  border-radius: 150px;
+}
+.cantact-ccontainer .contact-box form {
   width: 500px;
   background: rgba(65, 27, 0, 0.5137254902);
   padding: 3%;
-  border-radius: 3%;
+  border-radius: 0% 3% 3% 0%;
 }
-.cantact-ccontainer form .send-sms {
+.cantact-ccontainer .contact-box form .send-sms {
   color: white;
   text-align: center;
 }
-.cantact-ccontainer form input {
+.cantact-ccontainer .contact-box form input {
   width: 93%;
   height: 20px;
   padding: 3%;
 }
-.cantact-ccontainer form #username,
-.cantact-ccontainer form #email,
-.cantact-ccontainer form #message,
-.cantact-ccontainer form #send {
+.cantact-ccontainer .contact-box form #username,
+.cantact-ccontainer .contact-box form #email,
+.cantact-ccontainer .contact-box form #message,
+.cantact-ccontainer .contact-box form #send {
   border: none;
   border-radius: 7px;
   margin-top: 5%;
 }
-.cantact-ccontainer form textarea {
+.cantact-ccontainer .contact-box form textarea {
   width: 93%;
   padding: 3%;
 }
-.cantact-ccontainer form .container-send {
+.cantact-ccontainer .contact-box form .container-send {
   display: flex;
   justify-content: flex-end;
 }
-.cantact-ccontainer form .container-send #send {
+.cantact-ccontainer .contact-box form .container-send #send {
   width: 30%;
   height: 40px;
   background: #ff6d00;
@@ -121,7 +135,7 @@ nav {
   border: none;
   border-radius: 50px;
 }
-.cantact-ccontainer form .container-send #send:hover {
+.cantact-ccontainer .contact-box form .container-send #send:hover {
   background: #0d1321;
   border: 1px solid orange;
 }
@@ -185,8 +199,8 @@ footer .center-ft .our-contact {
 }
 
 @media (max-width: 768px) {
-  form {
-    margin-top: 15%;
+  .img-txt {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -212,4 +226,4 @@ footer .center-ft .our-contact {
     text-align: center;
     border-top: 1px solid gray;
   }
-}
+}/*# sourceMappingURL=contact.css.map */
