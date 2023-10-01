@@ -14,17 +14,17 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 5%;
+    p{
+        color: gainsboro;
+        margin-top: 5px;
+
+    }
     li {
         margin-top: 6px;
         list-style: none;
     }
-
-    p {
-        margin-top: 6px;
-    }
-
     a {
-        color: white;
+        color: gainsboro;
         text-decoration: none;
     }
 
@@ -38,11 +38,12 @@ footer {
 
         p {
             margin: 5px;
+            color: gainsboro;
         }
     }
 
     .center-ft {
-        width: 25%;
+        width: 30%;
         display: flex;
         justify-content: space-between;
         gap: 20px;
@@ -62,9 +63,9 @@ footer {
                 }
             }
         }
-
         .our-contact {
             margin-bottom: 20px;
+            
         }
     }
 }
