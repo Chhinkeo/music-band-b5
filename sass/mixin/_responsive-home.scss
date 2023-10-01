@@ -1,12 +1,5 @@
 @media (min-width: 700px) and (max-width: 1024px) {
     main {
-        .type-music {
-            .group-card {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
         .event {
             .group-event {
                 display: grid;
@@ -34,47 +27,67 @@
                 font-size: 45px;
             }
         }
-        .discription{
-            width: 350px;
+
+        .discription {
+            margin-top: -75px;
+            width: 300px;
         }
-        .type-music{
-            h2{
+
+        .type-music {
+            h2 {
                 font-size: 25px;
             }
-            .group-card{
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                .card-music{
-                    height: 20vh;
-                    p{
-                        font-size: 13px;
-                        margin-top: 1px;
-                    }
-                }
-            }
-        }
-        .event{
-            h2{
-                font-size: 25px;
-            }
-            .group-event{
+
+            .group-card {
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
-                img{
+
+                p {
+                    width: 80%;
+                }
+
+                a {
+                    width: 90%;
+                    .card-music {
+                        margin-left: 7%;
+                        p {
+                            font-size: 13px;
+                            margin-top: 1px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .event {
+            h2 {
+                font-size: 25px;
+            }
+
+            .group-event {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+                img {
                     width: 100%;
                     margin-bottom: 20px;
                 }
+
                 .schedule {
                     .time-event {
                         width: 100%;
                         margin-bottom: 10px;
-                        p{
+
+                        p {
                             font-size: 15px;
                         }
-                        .date{
+
+                        .date {
                             padding: 10px;
                         }
-                        .place{
+
+                        .place {
                             padding: 10px 0;
                         }
                     }

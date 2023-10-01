@@ -8,7 +8,7 @@
 nav {
   background-color: #793300;
   width: 100%;
-  height: 8vh;
+  height: 49px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -64,6 +64,10 @@ nav {
   .logo h2 {
     font-size: 15px;
   }
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+  }
   .menu ul li a {
     font-size: 12px;
     padding: 16px 10px;
@@ -111,50 +115,78 @@ main .discription p {
 main .type-music {
   margin: 40px;
   padding-bottom: 40px;
-  border-bottom: 1px solid black;
+  margin-left: 0;
+  margin-bottom: 0;
 }
 main .type-music h2 {
   font-size: 35px;
+  margin-left: 40px;
 }
 main .type-music p {
   margin-bottom: 50px;
+  margin-left: 40px;
 }
 main .type-music .group-card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
+  width: 100%;
+  background-image: url(../image/bg-cardmusic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 20px;
+  margin-left: 0;
+  padding: 90px 20px;
+  box-shadow: 0px 8px 10px 0px rgba(64, 64, 64, 0.664);
+}
+main .type-music .group-card p {
+  color: white;
+  width: 40%;
 }
 main .type-music .group-card a {
   text-decoration: none;
+  width: 340px;
 }
-main .type-music .group-card .card-music {
-  width: 90%;
-  height: 70vh;
-  background-color: #793300;
+main .type-music .group-card a .card-music {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.082);
   margin: auto;
   border-radius: 10px;
-  box-shadow: 0px 5px 10px 0px rgb(39, 39, 39);
+  box-shadow: 0px 8px 15px 7px rgba(192, 192, 192, 0.664);
   transition: 0.4s;
-}
-main .type-music .group-card .card-music img {
-  width: 100%;
-  height: 85%;
-  border-radius: 10px 10px 0 0;
-}
-main .type-music .group-card .card-music p {
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
+  margin-right: 100px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+}
+main .type-music .group-card a .card-music img {
+  width: 70%;
+  border-radius: 10px;
+}
+main .type-music .group-card .card-music {
+  width: 30%;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.082);
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px 7px rgba(192, 192, 192, 0.664);
+  transition: 0.4s;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .type-music .group-card .card-music img {
+  width: 50%;
+  border-radius: 10px;
 }
 main .type-music .group-card .card-music:hover {
   font-variation-settings: "wght" 50;
   letter-spacing: 1px;
-  box-shadow: 0px 8px 15px 0px rgb(0, 0, 0);
+  box-shadow: 5px 8px 15px 10px rgba(255, 255, 255, 0.745);
   transform: scale(1.07, 1.07);
   opacity: 9;
 }
@@ -281,10 +313,6 @@ footer .center-ft .our-contact {
 }
 
 @media (min-width: 700px) and (max-width: 1024px) {
-  main .type-music .group-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
   main .event .group-event {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -302,19 +330,26 @@ footer .center-ft .our-contact {
     font-size: 45px;
   }
   main .discription {
-    width: 350px;
+    margin-top: -75px;
+    width: 300px;
   }
   main .type-music h2 {
     font-size: 25px;
   }
   main .type-music .group-card {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-  main .type-music .group-card .card-music {
-    height: 20vh;
+  main .type-music .group-card p {
+    width: 80%;
   }
-  main .type-music .group-card .card-music p {
+  main .type-music .group-card a {
+    width: 90%;
+  }
+  main .type-music .group-card a .card-music {
+    margin-left: 7%;
+  }
+  main .type-music .group-card a .card-music p {
     font-size: 13px;
     margin-top: 1px;
   }
@@ -346,6 +381,14 @@ footer .center-ft .our-contact {
 @media screen and (max-width: 768px) {
   footer {
     flex-direction: column;
+  }
+  footer h3 {
+    color: rgb(240, 227, 227);
+    font-size: 15px;
+  }
+  footer p, footer a {
+    color: rgb(183, 181, 181);
+    font-size: 12px;
   }
   footer .about-company {
     width: 100%;

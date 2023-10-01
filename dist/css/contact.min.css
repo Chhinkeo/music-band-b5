@@ -7,7 +7,7 @@
 nav {
   background-color: #793300;
   width: 100%;
-  height: 8vh;
+  height: 49px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -63,83 +63,134 @@ nav {
   .logo h2 {
     font-size: 15px;
   }
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+  }
   .menu ul li a {
     font-size: 12px;
     padding: 16px 10px;
   }
 }
-.menu > ul > li:nth-child(3) > a {
-  background-color: rgba(0, 0, 0, 0.267);
-}
-
-.cantact-ccontainer {
-  background-image: url(/image/bg_contact.jpg);
+.cantact-container {
+  background-image: url(/image/background\ cnt.jpg);
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin-top: 4%;
+  background-position: center;
+  margin-top: 3%;
   padding: 2%;
   display: flex;
 }
-.cantact-ccontainer .contact-box {
+.cantact-container .contact-box {
+  padding: 2%;
   display: flex;
 }
-.cantact-ccontainer .contact-box .img-txt {
-  width: 500px;
-  background: white;
-  background: rgba(1, 22, 39, 0.5254901961);
+.cantact-container .contact-box .img-txt {
+  width: 400px;
+  background: #011627;
   padding: 3%;
   border-radius: 3% 0% 0% 3%;
 }
-.cantact-ccontainer .contact-box .img-txt img {
+.cantact-container .contact-box .img-txt img {
   margin-left: 20%;
   border-radius: 150px;
 }
-.cantact-ccontainer .contact-box form {
-  width: 500px;
+.cantact-container .contact-box form {
+  width: 400px;
   background: rgba(65, 27, 0, 0.5137254902);
   padding: 3%;
   border-radius: 0% 3% 3% 0%;
 }
-.cantact-ccontainer .contact-box form .send-sms {
+.cantact-container .contact-box form .send-sms {
   color: white;
   text-align: center;
 }
-.cantact-ccontainer .contact-box form input {
+.cantact-container .contact-box form input {
   width: 93%;
   height: 20px;
   padding: 3%;
 }
-.cantact-ccontainer .contact-box form #username,
-.cantact-ccontainer .contact-box form #email,
-.cantact-ccontainer .contact-box form #message,
-.cantact-ccontainer .contact-box form #send {
-  border: none;
+.cantact-container .contact-box form #username,
+.cantact-container .contact-box form #email,
+.cantact-container .contact-box form #message,
+.cantact-container .contact-box form #send {
+  border: 1px solid rgba(128, 128, 128, 0.367);
   border-radius: 7px;
   margin-top: 5%;
 }
-.cantact-ccontainer .contact-box form textarea {
+.cantact-container .contact-box form textarea {
   width: 93%;
   padding: 3%;
 }
-.cantact-ccontainer .contact-box form .container-send {
+.cantact-container .contact-box form .container-send {
   display: flex;
   justify-content: flex-end;
 }
-.cantact-ccontainer .contact-box form .container-send #send {
+.cantact-container .contact-box form .container-send #send {
   width: 30%;
   height: 40px;
-  background: #ff6d00;
+  background: #0d1321;
   color: white;
   border: none;
   border-radius: 50px;
 }
-.cantact-ccontainer .contact-box form .container-send #send:hover {
-  background: #0d1321;
+.cantact-container .contact-box form .container-send #send:hover {
+  background: #4f000b;
   border: 1px solid orange;
 }
 
+@media screen and (max-width: 768px) {
+  .contact-box {
+    width: 100%;
+    display: flex;
+  }
+  .contact-box .img-txt {
+    display: none;
+  }
+  .contact-box .img-txt img {
+    margin-left: 20%;
+    border-radius: 150px;
+  }
+  form {
+    margin-top: 20%;
+    margin-right: 10px;
+    border-radius: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  footer h3 {
+    color: rgb(240, 227, 227);
+    font-size: 15px;
+  }
+  footer p, footer a {
+    color: rgb(183, 181, 181);
+    font-size: 12px;
+  }
+  footer .about-company {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .center-ft {
+    width: 100%;
+  }
+  footer .center-ft .list-of-music {
+    margin-bottom: 20px;
+  }
+  footer .center-ft .follow-us {
+    margin-bottom: 20px;
+  }
+  footer .our-contact {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    border-top: 1px solid gray;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -196,34 +247,4 @@ footer .center-ft .follow-us ul .icon-media {
 }
 footer .center-ft .our-contact {
   margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-  .img-txt {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  footer {
-    flex-direction: column;
-  }
-  footer .about-company {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  footer .center-ft {
-    width: 100%;
-  }
-  footer .center-ft .list-of-music {
-    margin-bottom: 20px;
-  }
-  footer .center-ft .follow-us {
-    margin-bottom: 20px;
-  }
-  footer .our-contact {
-    margin-bottom: 20px;
-    margin-top: 5px;
-    text-align: center;
-    border-top: 1px solid gray;
-  }
 }

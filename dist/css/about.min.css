@@ -7,7 +7,7 @@
 nav {
   background-color: #793300;
   width: 100%;
-  height: 8vh;
+  height: 49px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -63,6 +63,10 @@ nav {
   .logo h2 {
     font-size: 15px;
   }
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+  }
   .menu ul li a {
     font-size: 12px;
     padding: 16px 10px;
@@ -80,7 +84,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/image/change.jpg);
+  background-image: url(/image/355026691_819194189574212_2851892996701070980_n.jpg);
   background-position: center;
   background-size: cover;
   z-index: -1;
@@ -110,11 +114,15 @@ header h1 {
   z-index: 1111;
 }
 header p {
+  text-align: justify;
   padding: 15px;
   width: 15cm;
   z-index: 1111;
 }
 
+main .ourteam {
+  margin-top: -75px;
+}
 main .ourteam h2 {
   font-size: 35px;
   text-align: center;
@@ -152,7 +160,7 @@ main .ourteam .card .card-about .text h3 {
   gap: 80px;
 }
 main .ourteam .card .card-about .text p {
-  text-align: left;
+  text-align: justify;
 }
 main .ourteam .card .card-about:hover {
   font-variation-settings: "wght" 20;
@@ -162,7 +170,6 @@ main .ourteam .card .card-about:hover {
 }
 main .new {
   width: 100%;
-  height: 60vh;
 }
 main .new p {
   width: 15cm;
@@ -193,16 +200,18 @@ main .new .icone .icone1 h3 {
 }
 main .follow {
   width: 100%;
+  background-color: rgb(207, 207, 207);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 main .follow .follow-1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 50px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 main .follow .follow-1 h2 {
   font-size: 40px;
@@ -223,8 +232,8 @@ main .experience .card-experience {
   grid-template-columns: repeat(2, 1fr);
 }
 main .experience .card-experience p {
-  padding: 60px;
-  text-align: left;
+  padding: 40px;
+  text-align: justify;
   padding-right: 90px;
 }
 main .experience .card-experience img {
@@ -297,41 +306,138 @@ footer .center-ft .our-contact {
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-  main .card {
+  .container header {
+    height: 48vh;
+  }
+  .container main .ourteam .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .container main .ourteam .card .card-about {
+    gap: 25px;
     display: flex;
     flex-direction: row;
   }
-  main .card-experience {
-    gap: 35px;
+  .container main .ourteam .card .card-about .text {
+    display: flex;
+    flex-direction: column;
   }
-  main .card-experience p {
-    text-align: left;
+  .container main .ourteam .card .card-about:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .container main .new {
+    display: grid;
+  }
+  .container main .new .icone {
+    display: grid;
+    justify-content: center;
+  }
+  .container main .new .icone .icone1 {
+    margin-top: -50px;
+  }
+  .container main .new .icone .icone1 img {
+    width: 300px;
+    height: 200px;
+  }
+  .container main .follow .follow-1 h2 {
+    font-size: 30px;
+  }
+  .container main .card-experience {
+    height: 69vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .container main .card-experience img {
+    align-self: center;
+  }
+  .container main .card-experience p {
+    text-align: justify;
+    width: 85%;
+    margin-left: -10px;
+    padding-bottom: 5px;
   }
 }
 @media (max-width: 599px) {
-  main .card {
+  .container header {
+    height: 47vh;
+  }
+  .container header p {
+    margin: 20px;
+    width: 90%;
+  }
+  .container main .ourteam {
+    margin-top: -20px;
+  }
+  .container main .ourteam .card {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+  }
+  .container main .ourteam .card .card-about {
     gap: 25px;
-  }
-  main .experience h2 {
-    text-align: center;
-  }
-  main .experience .card-experience {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  main .experience .card-experience img {
-    border: 2px solid rgb(220, 143, 0);
+  .container main .ourteam .card .card-about .text {
+    display: flex;
+    flex-direction: column;
   }
-  main .experience .card-experience img,
-  main .experience .card-experience p {
+  .container main .new {
+    display: grid;
+  }
+  .container main .new .icone {
+    display: grid;
+    justify-content: center;
+    margin-left: -60px;
+  }
+  .container main .new .icone .icone1 {
+    margin-top: -50px;
+  }
+  .container main .new .icone .icone1 img {
+    width: 300px;
+    height: 200px;
+  }
+  .container main .new p {
+    text-align: justify;
+    width: 92%;
+    margin: 0px 30px 0px 20px;
+  }
+  .container main .follow .follow-1 {
+    margin: -20px;
+  }
+  .container main .follow .follow-1 h2 {
+    font-size: 18px;
+  }
+  .container main .card-experience {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .container main .card-experience img {
     margin: auto;
+    margin-left: 60px;
+  }
+  .container main .card-experience p {
+    text-align: justify;
+    width: 85%;
+    margin-left: -50px;
   }
 }
 @media screen and (max-width: 768px) {
   footer {
     flex-direction: column;
+  }
+  footer h3 {
+    color: rgb(240, 227, 227);
+    font-size: 15px;
+  }
+  footer p, footer a {
+    color: rgb(183, 181, 181);
+    font-size: 12px;
   }
   footer .about-company {
     width: 100%;
