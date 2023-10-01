@@ -15,6 +15,9 @@
           h2{
               margin-bottom: 10px;
           }
+          input,textarea::placeholder{
+            font-size: 10px;
+          }
       }
   }
 }

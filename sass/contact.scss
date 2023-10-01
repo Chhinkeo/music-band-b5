@@ -75,11 +75,14 @@
                 height: 40px;
                 background: #000814;
                 color: white;
-                border: none;
+                border: 1px solid orange;
                 border-radius: 50px;
             }
             #send:hover {
-                border: 1px solid orange;
+                background: white;
+                color: black;
+                border: 2px solid black;
+                
             }
             
         }
