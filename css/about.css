@@ -7,7 +7,7 @@
 nav {
   background-color: #793300;
   width: 100%;
-  height: 8vh;
+  height: 49px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -63,6 +63,10 @@ nav {
   .logo h2 {
     font-size: 15px;
   }
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+  }
   .menu ul li a {
     font-size: 12px;
     padding: 16px 10px;
@@ -80,7 +84,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/image/change.jpg);
+  background-image: url(/image/355026691_819194189574212_2851892996701070980_n.jpg);
   background-position: center;
   background-size: cover;
   z-index: -1;
@@ -196,16 +200,18 @@ main .new .icone .icone1 h3 {
 }
 main .follow {
   width: 100%;
+  background-color: rgb(207, 207, 207);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 main .follow .follow-1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 50px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 main .follow .follow-1 h2 {
   font-size: 40px;
@@ -454,4 +460,4 @@ footer .center-ft .our-contact {
     text-align: center;
     border-top: 1px solid gray;
   }
-}/*# sourceMappingURL=about.css.map */
+}
