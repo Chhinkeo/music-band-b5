@@ -366,9 +366,14 @@ footer .center-ft .our-contact {
   .container header {
     height: 47vh;
   }
+  .container header h1 {
+    margin-top: 100px;
+  }
   .container header p {
-    margin: 20px;
     width: 90%;
+    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
   .container main .ourteam {
     margin-top: -20px;
@@ -393,7 +398,6 @@ footer .center-ft .our-contact {
   .container main .new .icone {
     display: grid;
     justify-content: center;
-    margin-left: -60px;
   }
   .container main .new .icone .icone1 {
     margin-top: -50px;
@@ -409,6 +413,7 @@ footer .center-ft .our-contact {
   }
   .container main .follow .follow-1 {
     margin: -20px;
+    padding: 30px;
   }
   .container main .follow .follow-1 h2 {
     font-size: 18px;
