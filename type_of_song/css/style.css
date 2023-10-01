@@ -133,6 +133,10 @@ h1:hover {
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
+    header{
+        background-image: url(/image/piano.jpg);
+        height: 50vh;
+    }
     .group-vdo>.card-vdo {
         width: 30%;
     }
@@ -158,6 +162,7 @@ h1:hover {
     }
     header{
         background-image: url(/image/piano.jpg);
+        height: 50vh;
     }
     .name{
         margin: auto;

@@ -130,11 +130,13 @@ nav {
   height: 40px;
   background: #000814;
   color: white;
-  border: none;
+  border: 1px solid orange;
   border-radius: 50px;
 }
 .contact-container form .container-send #send:hover {
-  border: 1px solid orange;
+  background: white;
+  color: black;
+  border: 2px solid black;
 }
 
 @media screen and (max-width: 767px) {
@@ -155,6 +157,9 @@ nav {
   }
   .contact-container form h2 {
     margin-bottom: 10px;
+  }
+  .contact-container form input, .contact-container form textarea::placeholder {
+    font-size: 10px;
   }
 }
 * {

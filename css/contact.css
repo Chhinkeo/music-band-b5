@@ -158,9 +158,6 @@ nav {
   .contact-container form h2 {
     margin-bottom: 10px;
   }
-  .contact-container form textarea::-moz-placeholder {
-    font-size: 10px;
-  }
   .contact-container form input, .contact-container form textarea::placeholder {
     font-size: 10px;
   }
@@ -256,8 +253,4 @@ footer .center-ft .our-contact {
     text-align: center;
     border-top: 1px solid gray;
   }
-<<<<<<< HEAD
 }
-=======
-}/*# sourceMappingURL=contact.css.map */
->>>>>>> 8bcf9e29e032d071dade0b44a1ba4c591ba76128
