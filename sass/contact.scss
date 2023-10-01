@@ -6,87 +6,89 @@
 
 @import "component/variable";
 @import "component/navbar";
-
-.cantact-container {
+.contact-container{
+    // width: 100%;
+    // height: auto;
+    background: orange;
     background-image: url(/image/background\ cnt.jpg);
-    color: white;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-position: center ;
-    margin-top: 3%;
     padding: 2%;
+    margin-top: 60px;
     display: flex;
-    
-    .contact-box{
-        padding: 2%;
-        display: flex;
+    .img-txt { 
+        width: 35%;
+        background:#011627;
+        color: white;
+        padding: 3%;
+        border-radius: 0% 3% 3% 0%;
+        border-radius: 3%;
+        display: grid;
+        // align-self: center;
+        align-items: center;
+        justify-items: center;
 
-        .img-txt{
-            width: 400px;
-            background:#011627;
-            padding: 3%;
-            border-radius: 3% 0% 0% 3%;
-            img{
-                margin-left: 20%;
-                border-radius: 150px;
-            }
-            p{
-            }
+        h1 { 
+    
         }
-        form {
-            width: 400px;
-            background:#411b0083;
-            padding: 3%;
-            
-            border-radius: 0% 3% 3% 0%;
-            .send-sms {
-                color: white;
-                text-align: center;
-            }
     
-            input {
-                width: 93%;
-                height: 20px;
-                padding: 3%;
-            }
-            #username,
-            #email,
-            #message,
-            #send {
-                border: 1px solid rgba(128, 128, 128, 0.367);
-                border-radius: 7px;
-                margin-top: 5%;
-            }
+        p { 
     
-            textarea {
-                width: 93%;
-                padding: 3%;
-            }
-    
-            .container-send {
-                display: flex;
-                justify-content: flex-end;
-                
-                #send {
-                    width: 30%;
-                    height: 40px;
-                    background: #0d1321;
-                    color: white;
-                    border: none;
-                    border-radius: 50px;
-                }
-                #send:hover {
-                    background: #4f000b;
-                    border: 1px solid orange;
-                }
-                
-            }
         }
     }
-   
-}
+    
+    form {
+        width: 30%;
+        // width: auto;
+        background:#411b0083;
+        background: rgba(255, 255, 255, 0.087);
+        padding: 3%;
+        border-radius: 0% 3% 3% 0%;
+        .send-sms {
+            color: white;
+            text-align: center;
+        }
 
+        input {
+            width: 93%;
+            height: 20px;
+            padding: 3%;
+        }
+        #username,
+        #email,
+        #message,
+        #send {
+            border: 1px solid rgba(128, 128, 128, 0.367);
+            border-radius: 7px;
+            margin-top: 5%;
+        }
+
+        textarea {
+            width: 93%;
+            padding: 3%;
+        }
+
+        .container-send {
+            display: flex;
+            justify-content: flex-end;
+            
+            #send {
+                width: 30%;
+                height: 40px;
+                background: #000814;
+                color: white;
+                border: none;
+                border-radius: 50px;
+            }
+            #send:hover {
+                border: 1px solid orange;
+            }
+            
+        }
+    }
+}
 @import "mixin/responsive-contact";
 @import "component/footer";
 @import "mixin/responsive-footer";

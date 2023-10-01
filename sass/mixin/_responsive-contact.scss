@@ -1,24 +1,18 @@
-@media (min-width: 768px) and (max-width: 1024px) {}
-
-@media screen and (max-width: 768px) {
-  .contact-box {
-    width: 100%;
-    display: flex;
-
-    .img-txt {
-      display: none;
-
-      img {
-        margin-left: 20%;
-        border-radius: 150px;
+@media screen and (max-width:767px) {
+  .contact-container{
+      flex-direction: column;
+      padding: none;
+      .img-txt{
+          width: auto;
+          display: none;
       }
-    }
-  }
-  form{
-    // width: 30px;
-    // background: #000;
-    margin-top: 20%;
-    margin-right: 10px;
-    border-radius: 3%;
+      form{
+          width: auto;
+          border: 1px solid orange;
+          border-radius: 3%;
+          h2{
+              margin-top: 20px;
+          }
+      }
   }
 }
