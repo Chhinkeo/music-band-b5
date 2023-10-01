@@ -9,7 +9,7 @@
                 .card {
                     display: flex;
                     flex-wrap: wrap;
-                    gap: 20px;
+                    gap: 30px;
 
                     .card-about {
                         gap: 25px;
@@ -48,18 +48,29 @@
                 }
             }
 
+            .follow {
+                .follow-1 {
+                    h2 {
+                        font-size: 30px;
+                    }
+                }
+            }
 
-            .card-experience{
-                height: 65vh;
+            .card-experience {
+                height: 69vh;
                 display: flex;
                 flex-direction: column;
-                margin-top: 40px;
-                img{
+                margin-top: 25px;
+
+                img {
                     align-self: center;
-                }p{
+                }
+
+                p {
                     text-align: justify;
-                    width: 90%;
-                    margin-left: -33px;
+                    width: 85%;
+                    margin-left: -10px;
+                    padding-bottom: 5px;
                 }
 
             }
@@ -70,33 +81,91 @@
 
 
 @media (max-width:599px) {
-    main {
-        .card {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 25px;
+    .container {
+        header {
+            height: 47vh;
+            p{
+                margin: 20px;
+                width: 90%;
+            }
         }
 
-        .experience {
-            h2 {
-                text-align: center;
+        main {
+            .ourteam {
+                margin-top: -20px;
+                .card {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+
+                    .card-about {
+                        gap: 25px;
+                        display: flex;
+                        flex-direction: column;
+
+                        .text {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+
+            .new {
+                display: grid;
+
+                .icone {
+                    display: grid;
+                    justify-content: center;
+                    margin-left: -60px;
+
+                    .icone1 {
+                        margin-top: -50px;
+
+                        img {
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+            
+                }
+                p{
+                    text-align: justify;
+                    width: 92%;
+                    margin: 0px 30px 0px 20px;
+                    
+                }
+            }
+
+            .follow {
+                .follow-1 {
+                    margin: -20px;
+                    h2 {
+                        font-size: 18px;
+                
+
+                    }
+                }
             }
 
             .card-experience {
+                height: 50vh;
                 display: flex;
-                flex-wrap: wrap;
+                flex-direction: column;
+                margin-top: 20px;
 
                 img {
-                    border: 2px solid rgb(220, 143, 0);
+                    margin: auto;
+                    margin-left: 60px;
                 }
 
-                img,
                 p {
-                    margin: auto;
+                    text-align: justify;
+                    width: 85%;
+                    margin-left: -50px;
                 }
+
             }
         }
     }
-
-
 }
